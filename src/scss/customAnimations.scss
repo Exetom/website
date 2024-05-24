@@ -8,6 +8,24 @@
     animation: bounceAnimateY 2.5s linear infinite;
 }
 
+.background-animation {
+    transition: background 1s cubic-bezier(.18, .89, .32, 1.28);
+}
+
+.rotate-animation {
+    animation: rotate 10s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;

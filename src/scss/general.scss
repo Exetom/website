@@ -52,3 +52,12 @@
     -moz-border-radius: 5px;
     border-radius: 5px;
 }
+
+// Extra clasess
+
+.center-absokute {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}

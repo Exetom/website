@@ -1,8 +1,10 @@
 import React from 'react'
 import { Shapes } from '../../../3d/shapes/shapes';
+import { FaArrowDown } from "react-icons/fa6";
 import SPRING from "../../../assets/spring.svg";
 import ROCKET from "../../../assets/rocket.svg"
-import STAR from "../../../assets/start.svg"
+import STAR from "../../../assets/start.svg";
+import LETSGO from "../../../assets/lets-go.svg";
 
 const Hero = () => {
     return (
@@ -26,9 +28,13 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='absolute bottom-20 right-20'>
-                <Shapes />
+            <div className='absolute bottom-20 right-20 bounceUpDown'>
+                <a href="#" className='relative'>
+                    <img src={LETSGO} alt="" className='rotate-animation' />
+                    <FaArrowDown size={24} className='center-absokute' />
+                </a>
             </div>
+
             <div className='absolute left-20 bottom-20 bounceUpDown'>
                 <img src={STAR} alt="" />
             </div>
