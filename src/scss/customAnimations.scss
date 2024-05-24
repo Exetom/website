@@ -1,0 +1,35 @@
+.animation {
+    animation: gradient 5s ease infinite;
+    background: linear-gradient(135deg, #ffc700, #ff6e00, #f4009b, #8563af);
+    background-size: 400% 400%;
+}
+
+.bounceUpDown {
+    animation: bounceAnimateY 2.5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes bounceAnimateY {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
