@@ -70,9 +70,9 @@ const Partners = () => {
                 <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#880DB4]'} font-bold text-2xl tracking-widest`}>Who We Serve</div>
                 <div className={`${shaded ? "text-white" : "text-black"} mt-2 text-xl font-bold`}>We empower businesses to achieve comprehensive value through technology at every stage of their growth.</div>
                 <div className='mt-20'>
-                    <div class={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
-                        <div class="serve-partners-left">01/</div>
-                        <div class="serve-partners-right">
+                    <div className={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
+                        <div className="serve-partners-left">01/</div>
+                        <div className="serve-partners-right">
                             <div className='w-full flex flex-col gap-2'>
                                 <span className='text-xl font-extrabold'>Enterprise</span>
                                 <span className='font-bold'>Build custom solutions and adopt advanced technologies for your organization to:</span>
@@ -87,17 +87,17 @@ const Partners = () => {
                         </div>
                     </div>
 
-                    <div class={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
-                        <div class="serve-partners-left"></div>
-                        <div class="serve-partners-right">
+                    <div className={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
+                        <div className="serve-partners-left"></div>
+                        <div className="serve-partners-right">
                             <div className='w-full flex flex-col gap-2'>
                                 <hr />
                             </div>
                         </div>
                     </div>
-                    <div class={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
-                        <div class="serve-partners-left">02/</div>
-                        <div class="serve-partners-right">
+                    <div className={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
+                        <div className="serve-partners-left">02/</div>
+                        <div className="serve-partners-right">
                             <div className='w-full flex flex-col gap-2'>
                                 <span className='text-xl font-extrabold'>Statups</span>
                                 <span className='font-bold'>Build custom solutions and adopt advanced technologies for your organization to:</span>

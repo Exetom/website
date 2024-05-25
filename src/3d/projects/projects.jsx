@@ -21,7 +21,7 @@ import WORK from "../../assets/projects/work_.png";
 const imageArray = ['', IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10]
 
 export const Projects = () => (
-    <Canvas camera={{ position: [0, 0, 100], fov: 15 }} style={{ width: "100%", height: '1000px' }} >
+    <Canvas camera={{ position: [0, 0, 100], fov: 15 }}>
         <fog attach="fog" args={['#a79', 8.5, 12]} />
         <ScrollControls pages={4}>
             <Rig rotation={[0, 0, 0.15]}>

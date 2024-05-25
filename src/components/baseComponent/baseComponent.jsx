@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from "react-router-dom";
-import LOGO from "../../assets/logo.gif";
+import LOGO from "../../assets/Logo-2.jpg";
 import PHONE_SVG from "../../assets/phone.svg";
 
 const BaseComponent = () => {
-  return (
-    <div className='w-full'>
-        <div className="max-w-7xl mx-auto">
-            <nav className="min-h-28 pt-5">
+    return (
+        <div className='w-full'>
+            <div className="max-w-7xl mx-auto">
+                <nav className="min-h-28 pt-5">
                     <div className="flex items-center justify-between min-h-20 ">
                         <div className='flex items-center justify-center gap-10'>
                             <img src={LOGO} alt="logo-image" className='w-44 cursor-pointer' />
@@ -30,13 +30,13 @@ const BaseComponent = () => {
                         </div>
 
                     </div>
-            </nav>
+                </nav>
+            </div>
+            <div className='w-full'>
+                <Outlet />
+            </div>
         </div>
-        <div className='w-full'>
-            <Outlet />
-        </div>
-    </div>
-  )
+    )
 }
 
 export default BaseComponent

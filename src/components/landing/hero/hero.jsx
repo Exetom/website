@@ -23,7 +23,7 @@ const Hero = () => {
                     Access 15+ passionate software engineers who collaborate with everyone from individuals and startups to SMEs and large enterprises. We're all about crafting innovative, simple, and artistically designed software solutions.
                 </div>
                 <div >
-                    <div class="booking-button">
+                    <div className="booking-button">
                         <a href="#">Schedule Call</a>
                     </div>
                 </div>
