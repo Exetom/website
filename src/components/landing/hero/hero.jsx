@@ -17,9 +17,9 @@ const Hero = () => {
                 <Shapes />
             </div>
             <div className='flex flex-col items-center justify-center hero-height'>
-                <div className='font-bold text-xl mb-4'>Revolutionizing the future with cutting-edge software solutions today</div>
-                <div className='text-5xl font-extrabold flex items-center gap-2'>Provide <span className='font-extrabold text-[#880DB4]'>Million-Dollar</span> Business Solutions <img src={ROCKET} alt="" /></div>
-                <div className='text-center mt-6 font-bold text-xl w-[800px]'>
+                <div data-aos="fade-right" data-aos-duration="1000" className='font-bold text-xl mb-4'>Revolutionizing the future with cutting-edge software solutions today</div>
+                <div data-aos="fade-down-right" data-aos-duration="1000" className='text-5xl font-extrabold flex items-center gap-2'>Provide <span className='font-extrabold text-[#880DB4]'>Million-Dollar</span> Business Solutions <img src={ROCKET} alt="" /></div>
+                <div data-aos="fade-left" data-aos-duration="1000" className='text-center mt-6 font-bold text-xl w-[800px]'>
                     Access 15+ passionate software engineers who collaborate with everyone from individuals and startups to SMEs and large enterprises. We're all about crafting innovative, simple, and artistically designed software solutions.
                 </div>
                 <div >

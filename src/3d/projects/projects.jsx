@@ -16,7 +16,7 @@ import IMG7 from "../../assets/projects/img7_.jpg";
 import IMG8 from "../../assets/projects/img8_.jpg";
 import IMG9 from "../../assets/projects/img9_.jpg";
 import IMG10 from "../../assets/projects/img10_.jpg";
-import WORK from "../../assets/projects/work_.png";
+import WORK from "../../assets/logo-dark.jpg";
 
 const imageArray = ['', IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10]
 

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from "react-router-dom";
-import LOGO from "../../assets/Logo-2.jpg";
+import LOGO from "../../assets/logo-dark-tranparent.png";
 import PHONE_SVG from "../../assets/phone.svg";
 
 const BaseComponent = () => {

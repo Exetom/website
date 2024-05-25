@@ -4,12 +4,19 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { ParallaxProvider } from "react-scroll-parallax";
+
+AOS.init();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ParallaxProvider>
+        <App />
+      </ParallaxProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

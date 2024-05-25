@@ -1,15 +1,4 @@
-.team-title {
-    position: relative;
-}
-
-.team-title .team-title-text {
-    color: rgb(80, 80, 80);
-    font-size: 7rem;
-    padding-left: 100px;
-    -webkit-text-stroke: 10px rgb(80, 80, 80);
-}
-
-.team-cards {
+.insights-cards {
     padding: 100px;
     display: flex;
     justify-content: space-between;
@@ -17,39 +6,7 @@
     cursor: pointer;
 }
 
-
-.metallic-card {
-    width: 300px;
-    height: 180px;
-    border-radius: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-}
-
-.card-content {
-    color: #333;
-    text-align: center;
-    z-index: 1;
-}
-
-.card-content h1 {
-    margin: 0;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.card-content p {
-    margin: 10px 0 0;
-    font-size: 1.2em;
-    letter-spacing: 2px;
-}
-
-
-.team-cards .team-card-inner {
+.insights-cards .insights-card-inner {
     width: 49.5%;
     height: 450px;
     will-change: transform, color, background;
@@ -67,7 +24,7 @@
 
 }
 
-.team-cards .team-card-inner .team-card-front {
+.insights-cards .insights-card-inner .insights-card-front {
     height: 100%;
     width: 100%;
     display: flex;
@@ -76,7 +33,7 @@
     animation: display 2s ease-in-out;
 }
 
-.team-cards .team-card-inner .team-card-back {
+.insights-cards .insights-card-inner .insights-card-back {
     height: 100%;
     display: none;
     flex-direction: column;
@@ -84,15 +41,15 @@
     animation: display 2s ease-in-out;
 }
 
-.team-card-inner:hover .team-card-front {
+.insights-card-inner:hover .insights-card-front {
     display: none;
 }
 
-.team-card-inner:hover .team-card-back {
+.insights-card-inner:hover .insights-card-back {
     display: flex;
 }
 
-.team-cards .team-card-inner .team-card-back .team-card-text {
+.insights-cards .insights-card-inner .insights-card-back .insights-card-text {
     font-weight: bolder;
     font-size: 96px;
     display: flex;
@@ -100,7 +57,7 @@
     transition: justify-content 2s;
 }
 
-.team-cards .team-card-inner .team-card-back .team-card-content {
+.insights-cards .insights-card-inner .insights-card-back .insights-card-content {
     font-weight: bolder;
     font-size: 32px;
     display: flex;
@@ -108,34 +65,26 @@
     transition: justify-content 2s;
 }
 
-.team-cards .team-c-2 {
+.insights-cards .insights-c-2 {
     margin-top: 150px;
 }
 
-.team-cards .team-c-3 {
+.insights-cards .insights-c-3 {
     margin-top: -150px;
 }
 
-.team-c-1:hover {
+.insights-c-1:hover {
     background: #c93204 !important;
 }
 
-.team-c-2:hover {
+.insights-c-2:hover {
     background: #cdd6d6 !important;
 }
 
-.team-c-3:hover {
+.insights-c-3:hover {
     background: #a1c9b9 !important;
 }
 
-.team-c-4:hover {
+.insights-c-4:hover {
     background: #c2b439 !important;
-}
-
-.team-card-back:hover>.team-card-text {
-    justify-content: flex-end;
-}
-
-.team-card-back:hover>.team-card-content {
-    justify-content: flex-start;
 }

@@ -1,9 +1,5 @@
 @import 'customAnimations.scss';
 @import 'general.scss';
 @import 'partners.scss';
-@import 'team.scss';
-
-// hero container height
-.hero-height {
-    height: calc(100vh - 112px);
-}
+@import 'insights.scss';
+@import 'reviews.scss';
