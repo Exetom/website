@@ -6,17 +6,40 @@ import OurProjects from "../../components/landing/projects/projects";
 import Insights from "../../components/landing/insights/insights";
 import Reviews from "../../components/landing/reviews/reviews";
 import Services from "../../components/landing/services/services";
+import Work from "../../components/landing/work/work";
+import Skills from "../../components/landing/skills/skills";
+
+const Section = ({ children }) => {
+    return (<div className="landing-section">{children}</div>)
+}
 
 const Landing = () => {
     return (
         <div className='w-full'>
             <Hero />
             <Partners />
-            {/* <OurProjects /> */}
-            <Insights />
-            <Reviews />
-            <Services />
-            <div className="h-screen"></div>
+            {/* <Section>
+                <OurProjects />
+            </Section> */}
+            <Section>
+
+                <Insights />
+            </Section>
+            <Section>
+                <Reviews />
+            </Section>
+            <Section>
+                <Services />
+            </Section>
+            {/* <Section>
+                <Work />
+            </Section> */}
+            <Section>
+                <Skills />
+            </Section>
+            <div className="h-screen">
+                asdasd
+            </div>
         </div>
     )
 }

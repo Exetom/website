@@ -1,0 +1,41 @@
+.our-works {
+    padding: 10px;
+
+    .our-works-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 40px;
+
+        .our-works-projects-single {
+            min-width: calc(100vw - 450px) !important;
+            box-shadow: 0 0 20px #686767;
+
+            .taskbar {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                background: #393e46;
+                padding: 10px;
+
+                .dots {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+                }
+
+                .task-url {
+
+                    .url-bar {
+                        background: #2e3239;
+                        color: #eee;
+                        padding: 5px 100px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+
+        }
+
+    }
+}
