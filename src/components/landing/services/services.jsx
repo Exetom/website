@@ -1,5 +1,6 @@
 import React from 'react'
 import { dataServiceList } from "./data";
+import Container from '../../container/container';
 
 const Services = () => {
     return (
@@ -12,26 +13,28 @@ const Services = () => {
                     Services
                 </span>
             </div>
-            <div className="services-container max-w-7xl mx-auto mt-40">
-                {dataServiceList.map((e) => (
-                    <div data-aos={e.animation} className='service-inner-container'>
-                        <div className="service-box" style={{ '--clr': e.color }}>
-                            <div className="service-box-content">
-                                <div className="service-box-content-icon">
-                                    {e.icon}
-                                </div>
-                                <div className="service-box-content-text">
-                                    <div className='title'>{e.title}</div>
-                                    <p className='description'>
-                                        {e.description}
-                                    </p>
-                                    <a href="#" className='button'>Book a Call</a>
+            <Container>
+                <div className="services-container mt-40">
+                    {dataServiceList.map((e) => (
+                        <div data-aos={e.animation} className='service-inner-container'>
+                            <div className="service-box" style={{ '--clr': e.color }}>
+                                <div className="service-box-content">
+                                    <div className="service-box-content-icon">
+                                        {e.icon}
+                                    </div>
+                                    <div className="service-box-content-text">
+                                        <div className='title'>{e.title}</div>
+                                        <p className='description'>
+                                            {e.description}
+                                        </p>
+                                        <a href="#" className='button'>Book a Call</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                ))}
-            </div>
+                    ))}
+                </div>
+            </Container>
         </div>
     )
 }

@@ -1,0 +1,22 @@
+.skills-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+
+    .skill-sec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .skills {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+}

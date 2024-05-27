@@ -8,6 +8,8 @@ import Reviews from "../../components/landing/reviews/reviews";
 import Services from "../../components/landing/services/services";
 import Work from "../../components/landing/work/work";
 import Skills from "../../components/landing/skills/skills";
+import Contact from "../../components/landing/contact/contact";
+import Footer from "../../components/landing/footer/footer";
 
 const Section = ({ children }) => {
     return (<div className="landing-section">{children}</div>)
@@ -37,9 +39,10 @@ const Landing = () => {
             <Section>
                 <Skills />
             </Section>
-            <div className="h-screen">
-                asdasd
-            </div>
+            <Section>
+                <Contact />
+            </Section>
+            <Footer />
         </div>
     )
 }
