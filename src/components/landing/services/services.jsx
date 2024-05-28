@@ -27,7 +27,7 @@ const Services = () => {
                                         <p className='description'>
                                             {e.description}
                                         </p>
-                                        <a href="#" className='button'>Book a Call</a>
+                                        <a href="#" className='button'>See Details</a>
                                     </div>
                                 </div>
                             </div>

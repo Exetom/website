@@ -62,6 +62,10 @@
                         text-align: justify;
                         transition: 0.5s ease-in-out;
                         color: #3a3a3a;
+                        min-height: 265px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        // white-space: nowrap;
                     }
 
                     .button {
@@ -134,6 +138,88 @@
                 &::after {
                     transform: skew(0deg);
                     inset: 40px -10px;
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .services-container {
+
+
+        .service-inner-container {
+            width: 45.333333%;
+
+            .service-box {
+
+                .service-box-content {
+
+                    .service-box-content-icon {}
+
+                    .service-box-content-text {
+
+                        .title {}
+
+                        .description {}
+
+                        .button {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .services-container {
+
+
+        .service-inner-container {
+            width: 70%;
+
+            .service-box {
+
+                .service-box-content {
+
+                    .service-box-content-icon {}
+
+                    .service-box-content-text {
+
+                        .title {}
+
+                        .description {}
+
+                        .button {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .services-container {
+
+
+        .service-inner-container {
+            width: 90%;
+
+            .service-box {
+
+                .service-box-content {
+
+                    .service-box-content-icon {}
+
+                    .service-box-content-text {
+
+                        .title {}
+
+                        .description {}
+
+                        .button {}
+                    }
                 }
             }
         }

@@ -34,9 +34,9 @@ const Landing = () => {
                 <Reviews />
             </Section> */}
 
-            {/* <Section>
+            <Section>
                 <Services />
-            </Section> */}
+            </Section>
 
             {/* <Section>
                 <Work />
