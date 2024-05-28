@@ -19,7 +19,7 @@ const Landing = () => {
     return (
         <div className='w-full'>
             <Hero />
-            {/* <Partners /> */}
+            <Partners />
             {/* <Section>
                 <OurProjects />
             </Section> */}

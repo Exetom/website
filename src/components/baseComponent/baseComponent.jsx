@@ -21,7 +21,7 @@ const BaseComponent = () => {
     }, [active]);
 
     return (
-        <div className={`w-full base-container ${active ? 'overflow-hidden' : ''}`}>
+        <div className={`w-full base-container overflow-x-hidden ${active ? 'overflow-hidden' : ''}`}>
             <Container>
                 <nav className="base-navbar">
                     <div className="base-inner-container">
