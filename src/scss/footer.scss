@@ -117,3 +117,25 @@
         }
     }
 }
+
+@media only screen and (max-width: 639px) {
+
+    .footer {
+        .footer-bottom {
+
+            .footer-bottom-title {}
+
+            .footer-bottom-container {
+                flex-direction: column-reverse;
+                gap: 40px;
+
+                .socials {
+                    justify-content: space-evenly;
+                    width: 100%;
+
+                    .social-icon {}
+                }
+            }
+        }
+    }
+}

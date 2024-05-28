@@ -30,9 +30,9 @@ const Landing = () => {
                 <Insights />
             </Section>
 
-            {/* <Section>
+            <Section>
                 <Reviews />
-            </Section> */}
+            </Section>
 
             <Section>
                 <Services />
@@ -42,13 +42,13 @@ const Landing = () => {
                 <Work />
             </Section> */}
 
-            {/* <Section>
+            <Section>
                 <Skills />
-            </Section> */}
+            </Section>
 
             {/* <Contact /> */}
 
-            {/* <Footer /> */}
+            <Footer />
         </div>
     )
 }

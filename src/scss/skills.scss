@@ -20,3 +20,88 @@
         }
     }
 }
+
+@media only screen and (max-width: 1023px) {
+    .skills-container {
+        gap: 30px;
+
+        .skill-sec {
+            gap: 30px;
+
+            .skills {
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .skills-container {
+        gap: 25px;
+
+        .skill-sec {
+            gap: 25px;
+
+            .skills {
+                img {
+                    // width: 45px;
+                    // height: 45px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .skills-container {
+        gap: 25px;
+
+        .skill-sec {
+            gap: 25px;
+
+            .skills {
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .skills-container {
+        gap: 15px;
+
+        .skill-sec {
+            gap: 15px;
+
+            .skills {
+                img {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .skills-container {
+        gap: 10px;
+
+        .skill-sec {
+            gap: 10px;
+
+            .skills {
+                img {
+                    width: 25px;
+                    height: 25px;
+                }
+            }
+        }
+    }
+}
