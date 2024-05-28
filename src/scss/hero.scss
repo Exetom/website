@@ -1,0 +1,525 @@
+.hero-container {
+    position: relative;
+
+    .floating-obj-1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .floating-obj-2 {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .floating-obj-3 {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+    }
+
+    .floating-obj-4 {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+    }
+
+    .hero-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 112px);
+
+        .title {
+            font-size: 3rem;
+            line-height: 1;
+            font-weight: 800;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem
+        }
+
+        .pre-title {
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .description {
+            margin-top: 1.5rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            width: 800px;
+            text-align: center;
+        }
+
+        .booking-button {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+
+            a {
+                color: white;
+                font-family: Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: 36px;
+                text-align: center;
+                text-decoration: none;
+                background-color: #880db5;
+                display: block;
+                position: relative;
+                padding: 20px 40px;
+
+                -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+                text-shadow: 0px 1px 0px #000;
+                filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+                -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #5a1076;
+                -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #5a1076;
+                box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 #5a1076;
+
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+
+                &:active {
+                    top: 10px;
+                    background-color: #880db5;
+
+                    -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #5a1076;
+                    -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3pxpx 0 #5a1076;
+                    box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #5a1076;
+                }
+            }
+
+            &:after {
+                content: "";
+                height: 100%;
+                width: 100%;
+                padding: 4px;
+                position: absolute;
+                bottom: -15px;
+                left: -4px;
+                z-index: -1;
+                background-color: #2B1800;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 1279px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {
+                font-size: 2.5rem;
+            }
+
+            .pre-title {}
+
+            .description {
+                width: 750px;
+                font-size: 1.20rem;
+            }
+
+            .booking-button {
+                a {}
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .pre-title {
+                font-size: 1.1rem;
+            }
+
+            .description {
+                width: 750px;
+                font-size: 1.1rem;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 32px;
+                    padding: 15px 30px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {
+                font-size: 2rem;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-align: center;
+                position: relative;
+                padding-bottom: 48px;
+
+                img {
+                    width: 3rem;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 50%;
+                    z-index: 9999;
+                    transform: translate(-50%);
+                }
+
+            }
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 1rem;
+            }
+
+            .description {
+                margin-top: 1rem;
+                width: 650px;
+                font-size: 1rem;
+                font-weight: 500;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 32px;
+                    padding: 15px 30px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 1rem;
+            }
+
+            .description {
+                margin-top: 0.8rem;
+                width: 550px;
+                font-size: 0.8rem;
+                font-weight: 500;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 32px;
+                    padding: 15px 30px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 608px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 0.9rem;
+            }
+
+            .description {
+                margin-top: 0.8rem;
+                width: 500px;
+                font-size: 0.8rem;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 24px;
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 549px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 0.8rem;
+            }
+
+            .description {
+                margin-top: 0.8rem;
+                width: 500px;
+                font-size: 0.8rem;
+            }
+
+            .booking-button {
+
+                a {
+                    font-size: 24px;
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 488px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 0.75rem;
+            }
+
+            .description {
+                margin-top: 0.8rem;
+                width: 450px;
+                font-size: 0.78rem;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 24px;
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 0.72rem;
+            }
+
+            .description {
+                margin-top: 0.8rem;
+                width: 400px;
+                font-size: 0.72rem;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 24px;
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
+@media only screen and (max-width: 397px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 0.65rem;
+            }
+
+            .description {
+                margin-top: 0.65rem;
+                width: 350px;
+                font-size: 0.65rem;
+            }
+
+            .booking-button {
+
+
+                a {
+                    font-size: 24px;
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+
+
+    }
+}

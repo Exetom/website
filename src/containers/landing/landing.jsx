@@ -19,11 +19,11 @@ const Landing = () => {
     return (
         <div className='w-full'>
             <Hero />
-            <Partners />
+            {/* <Partners /> */}
             {/* <Section>
                 <OurProjects />
             </Section> */}
-            <Section>
+            {/* <Section>
 
                 <Insights />
             </Section>
@@ -32,15 +32,15 @@ const Landing = () => {
             </Section>
             <Section>
                 <Services />
-            </Section>
+            </Section> */}
             {/* <Section>
                 <Work />
             </Section> */}
-            <Section>
+            {/* <Section>
                 <Skills />
             </Section>
             <Contact />
-            <Footer />
+            <Footer /> */}
         </div>
     )
 }

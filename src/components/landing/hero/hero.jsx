@@ -10,18 +10,18 @@ import Container from '../../container/container';
 const Hero = () => {
     return (
         <Container>
-            <div className='relative' id="hero">
-                <div className='absolute right-20 top-20 bounceUpDown'>
+            <div className='hero-container' id="hero">
+                <div className='floating-obj-1'>
+                    <Shapes />
+                </div>
+                <div className='floating-obj-2 bounceUpDown'>
                     <img src={SPRING} alt="" />
                 </div>
 
-                <div className='absolute top-0 left-0'>
-                    <Shapes />
-                </div>
-                <div className='flex flex-col items-center justify-center hero-height'>
-                    <div data-aos="fade-right" data-aos-duration="1000" className='font-bold text-xl mb-4'>Revolutionizing the future with cutting-edge software solutions today</div>
-                    <div data-aos="fade-down-right" data-aos-duration="1000" className='text-5xl font-extrabold flex items-center gap-2'>Provide <span className='font-extrabold text-[#880DB4]'>Million-Dollar</span> Business Solutions <img src={ROCKET} alt="" /></div>
-                    <div data-aos="fade-left" data-aos-duration="1000" className='text-center mt-6 font-bold text-xl w-[800px]'>
+                <div className='hero-content-container'>
+                    <div data-aos="fade-right" data-aos-duration="1000" className='pre-title'>Revolutionizing the future with cutting-edge software solutions today</div>
+                    <div data-aos="fade-down-right" data-aos-duration="1000" className='title'>Provide <span className='font-extrabold text-[#880DB4]'>Million-Dollar</span> Business Solutions <img src={ROCKET} alt="" /></div>
+                    <div data-aos="fade-left" data-aos-duration="1000" className='description'>
                         Access 15+ passionate software engineers who collaborate with everyone from individuals and startups to SMEs and large enterprises. We're all about crafting innovative, simple, and artistically designed software solutions.
                     </div>
                     <div >
@@ -30,15 +30,14 @@ const Hero = () => {
                         </div>
                     </div>
                 </div>
-                <div className='absolute bottom-20 right-20 bounceUpDown'>
+                <div className='floating-obj-3 bounceUpDown'>
+                    <img src={STAR} alt="" />
+                </div>
+                <div className='floating-obj-4 bounceUpDown'>
                     <a href="#" className='relative'>
                         <img src={LETSGO} alt="" className='rotate-animation' />
                         <FaArrowDown size={24} className='center-absokute' />
                     </a>
-                </div>
-
-                <div className='absolute left-20 bottom-20 bounceUpDown'>
-                    <img src={STAR} alt="" />
                 </div>
             </div>
         </Container>
