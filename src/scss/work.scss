@@ -9,7 +9,39 @@
 
         .our-works-projects-single {
             min-width: calc(100vw - 450px) !important;
-            box-shadow: 0 0 20px #686767;
+
+            .info {
+                display: flex;
+                align-items: center;
+
+                .title {
+                    font-size: 48px;
+                    font-weight: bold;
+                    color: #880DB4;
+                }
+
+                .tech {
+                    display: flex;
+                    flex: 1;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+
+                    .stack {
+                        background: #9f9ea0;
+                        color: #000;
+                        font-weight: 600;
+                        padding: 10px 20px;
+                        border-radius: 50px;
+
+                    }
+                }
+            }
+
+            img {
+
+                box-shadow: 0 0 20px #686767;
+            }
 
             .taskbar {
                 border-top-left-radius: 5px;

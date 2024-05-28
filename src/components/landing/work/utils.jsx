@@ -2,12 +2,20 @@ function openLink(link, target = "_blank") {
     window.open(link, target)
 }
 export const SingleProject = (props) => {
-    const { image, index, link } = props
+    const { image, index, title, techs, link } = props
     const handleOnClickWindow = () => {
         openLink(link)
     }
     return (
-        <div data-aos={index % 2 === 0 ? 'zoom-in-right' : "zoom-in-left"} className='single-work-container our-works-projects-single' onClick={handleOnClickWindow}>
+        <div data-aos={index % 2 === 0 ? 'zoom-in-right' : "zoom-in-left"} className='single-work-container our-works-projects-single mt-24' onClick={handleOnClickWindow}>
+            <div className="info">
+                <div className="title"> {title}</div>
+                <div className="tech">
+                    {techs.map((tech) => (
+                        <span className="stack">{tech}</span>
+                    ))}
+                </div>
+            </div>
             <div className="flex items-center taskbar">
                 <div className="dots">
                     <div className="w-3 h-3 rounded-full bg-[#ef4444]"></div>

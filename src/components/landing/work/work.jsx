@@ -9,15 +9,12 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const Work = () => {
     const mainRef = useRef(null);
+    const workMainContainerRef = useRef(null);
     const workContainerRef = useRef(null);
 
     useGSAP(() => {
         const container = workContainerRef.current;
         const projects = container.querySelectorAll('.single-work-container');
-
-        const projectWidthValue = window.innerWidth;
-
-        container.style.width = `${projectWidthValue * projects.length}px`;
 
         gsap.to(projects, {
             xPercent: -100 * (projects.length - 1),
@@ -32,7 +29,7 @@ const Work = () => {
     }, { scope: mainRef });
 
     return (
-        <div className='w-full'>
+        <div ref={mainRef} className='w-full'>
             <div className='general-section-title'>
                 <span className='general-section-title-text tracking-wider'>
                     <span className='general-section-title-border'>
@@ -41,7 +38,7 @@ const Work = () => {
                     Worked on
                 </span>
             </div>
-            <div ref={mainRef} className='our-works'>
+            <div ref={workMainContainerRef} className='our-works'>
                 <div ref={workContainerRef} className='our-works-container'>
                     {(dataList || []).map((project, i) => (
                         <SingleProject
