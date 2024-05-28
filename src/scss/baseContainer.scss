@@ -12,7 +12,7 @@
             .nav-logo {
                 width: 9rem;
                 cursor: pointer;
-                z-index: 9999;
+                z-index: 8001;
             }
 
             .nav-right-items {
@@ -33,7 +33,7 @@
                         min-width: 40px;
                         min-height: 40px;
                         transition: all 0.3s;
-                        z-index: 9999;
+                        z-index: 8001;
 
                         &.active {
                             .circles {
@@ -113,7 +113,7 @@
         background: #2a0c34;
         width: 100%;
         min-height: 100vh;
-        z-index: 9998;
+        z-index: 8000;
         overflow-y: auto;
         display: flex;
         flex-direction: column;
