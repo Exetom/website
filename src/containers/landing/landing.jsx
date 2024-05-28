@@ -19,28 +19,36 @@ const Landing = () => {
     return (
         <div className='w-full'>
             <Hero />
+
             <Partners />
+
             {/* <Section>
                 <OurProjects />
             </Section> */}
-            {/* <Section>
 
+            <Section>
                 <Insights />
             </Section>
-            <Section>
+
+            {/* <Section>
                 <Reviews />
-            </Section>
-            <Section>
+            </Section> */}
+
+            {/* <Section>
                 <Services />
             </Section> */}
+
             {/* <Section>
                 <Work />
             </Section> */}
+
             {/* <Section>
                 <Skills />
-            </Section>
-            <Contact />
-            <Footer /> */}
+            </Section> */}
+
+            {/* <Contact /> */}
+
+            {/* <Footer /> */}
         </div>
     )
 }
