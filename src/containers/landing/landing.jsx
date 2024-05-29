@@ -22,9 +22,9 @@ const Landing = () => {
 
             <Partners />
 
-            {/* <Section>
+            <Section>
                 <OurProjects />
-            </Section> */}
+            </Section>
 
             <Section>
                 <Insights />

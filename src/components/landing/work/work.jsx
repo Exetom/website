@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { SingleProject } from "./utils";
 import { dataList } from "./data";
 import gsap from 'gsap';
@@ -7,38 +7,57 @@ import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
 
+const useResponsiveGSAP = (callback, dependencies) => {
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 767) {
+                callback();
+            } else {
+                ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+            }
+        };
+
+        handleResize();
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+            ScrollTrigger.getAll().forEach(trigger => trigger.kill());
+        };
+    }, dependencies);
+};
+
 const Work = () => {
-    const mainRef = useRef(null);
-    const workMainContainerRef = useRef(null);
     const workContainerRef = useRef(null);
 
-    useGSAP(() => {
+    useResponsiveGSAP(() => {
         const container = workContainerRef.current;
+        if (!container) return;
         const projects = container.querySelectorAll('.single-work-container');
 
         gsap.to(projects, {
-            xPercent: -100 * (projects.length - 1),
+            xPercent: -100 * (projects.length - 1) + (projects.length - 1) * 5,
             ease: 'none',
             scrollTrigger: {
                 trigger: container,
                 pin: true,
                 scrub: 1,
-                end: () => `+=${container.offsetWidth}`,
+                end: () => `+=${container.offsetWidth * (projects.length - 1)}`,
             },
         });
-    }, { scope: mainRef });
+    }, [workContainerRef]);
 
     return (
-        <div ref={mainRef} className='w-full'>
+        <div className='w-full'>
             <div className='general-section-title'>
                 <span className='general-section-title-text tracking-wider'>
                     <span className='general-section-title-border'>
-                        Thing's we <span className='border-bar'></span>
+                        Our <span className='border-bar'></span>
                     </span>
-                    Worked on
+                    Work
                 </span>
             </div>
-            <div ref={workMainContainerRef} className='our-works'>
+            <div className='our-works'>
                 <div ref={workContainerRef} className='our-works-container'>
                     {(dataList || []).map((project, i) => (
                         <SingleProject
@@ -50,7 +69,7 @@ const Work = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default Work
+export default Work;

@@ -7,7 +7,7 @@ export const SingleProject = (props) => {
         openLink(link)
     }
     return (
-        <div data-aos={index % 2 === 0 ? 'zoom-in-right' : "zoom-in-left"} className='single-work-container our-works-projects-single mt-24' onClick={handleOnClickWindow}>
+        <div data-aos={index % 2 === 0 ? 'zoom-in-right' : "zoom-in-left"} className='single-work-container our-works-projects-single' onClick={handleOnClickWindow}>
             <div className="info">
                 <div className="title"> {title}</div>
                 <div className="tech">

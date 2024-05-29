@@ -22,8 +22,8 @@ const Partners = () => {
             return;
         }
 
-        const heroSection = heroElement.getBoundingClientRect().height - 300;
-        const partnersSection = (partnersElement.getBoundingClientRect().height * 2) / 2;
+        const heroSection = heroElement?.getBoundingClientRect().height - 300;
+        const partnersSection = (partnersElement?.getBoundingClientRect().height * 2) / 2;
         const offset = window.pageYOffset;
         if (offset >= heroSection && offset < partnersSection) {
             setShaded(true);

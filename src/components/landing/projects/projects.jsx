@@ -4,9 +4,13 @@ import { Projects } from '../../../3d/projects/projects';
 const OurProjects = () => {
     return (
         <div className='w-full'>
-            <div className='max-w-7xl mx-auto'>
-                <div className='text-[#880DB4] text-2xl font-extrabold'>Our Exclusive Deliveries</div>
-                <div className='mt-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolorum repellat omnis exercitationem vero magni asperiores! Vero dolores nesciunt eaque perspiciatis accusamus consequuntur possimus! Quos ex quisquam nostrum rerum id?</div>
+            <div className='general-section-title'>
+                <span className='general-section-title-text tracking-wider'>
+                    <span className='general-section-title-border'>
+                        Our <span className='border-bar'></span>
+                    </span>
+                    Projects
+                </span>
             </div>
             <div className='relative w-full h-[calc(100vh-80px)]'>
                 <Projects />

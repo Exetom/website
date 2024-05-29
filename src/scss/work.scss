@@ -1,38 +1,49 @@
 .our-works {
-    padding: 10px;
+    // padding: 10px;
 
     .our-works-container {
         display: flex;
         justify-content: flex-start;
         align-items: center;
+        overflow: hidden;
         gap: 40px;
 
         .our-works-projects-single {
-            min-width: calc(100vw - 450px) !important;
+            min-width: 100vw;
+            box-sizing: border-box;
 
             .info {
                 display: flex;
                 align-items: center;
+                justify-content: space-between;
+                padding: 0 10px;
 
                 .title {
-                    font-size: 48px;
+                    font-size: 32px;
                     font-weight: bold;
-                    color: #880DB4;
+                    color: #fff;
+                    font-family: sans-serif;
+                    text-transform: uppercase;
+                    -webkit-text-stroke: 2px #fff;
+                    letter-spacing: .3rem;
+                    background: #2e3239;
+                    padding: 0 10px;
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
                 }
 
                 .tech {
                     display: flex;
-                    flex: 1;
-                    justify-content: center;
                     align-items: center;
-                    gap: 20px;
+                    gap: 10px;
 
                     .stack {
                         background: #9f9ea0;
                         color: #000;
-                        font-weight: 600;
-                        padding: 10px 20px;
+                        font-weight: 700;
+                        padding: 5px 10px;
                         border-radius: 50px;
+                        font-size: 12px;
 
                     }
                 }
@@ -69,5 +80,512 @@
 
         }
 
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 28px;
+                    }
+
+                    .tech {
+
+                        .stack {}
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {}
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 26px;
+                    }
+
+                    .tech {
+
+                        .stack {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {}
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1301px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 22px;
+                        -webkit-text-stroke: 2px #fff;
+                        letter-spacing: 0.1rem;
+                        padding: 0 8px;
+                    }
+
+                    .tech {
+                        gap: 8px;
+
+                        .stack {
+                            font-size: 11px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {}
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 20px;
+                    }
+
+                    .tech {
+                        gap: 8px;
+
+                        .stack {
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {}
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 18px;
+                    }
+
+                    .tech {
+                        gap: 6px;
+
+                        .stack {
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 300px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 14px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 925px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 16px;
+                    }
+
+                    .tech {
+                        gap: 6px;
+
+                        .stack {
+
+                            padding: 2px 6px;
+                            font-size: 8px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 250px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 857px) {
+    .our-works {
+
+        .our-works-container {
+
+            .our-works-projects-single {
+
+                .info {
+
+                    .title {
+                        font-size: 10px;
+                    }
+
+                    .tech {
+                        gap: 4px;
+
+                        .stack {
+
+                            padding: 2px 4px;
+                            font-size: 7px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 250px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .our-works {
+
+        .our-works-container {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+            gap: 40px;
+
+            .our-works-projects-single {
+                margin-top: 0 !important;
+
+                .info {
+
+                    .title {
+                        font-size: 20px;
+                    }
+
+                    .tech {
+                        gap: 4px;
+
+                        .stack {
+
+                            padding: 2px 8px;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 250px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 12px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .our-works {
+
+        .our-works-container {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+            gap: 40px;
+
+            .our-works-projects-single {
+                margin-top: 0 !important;
+
+                .info {
+
+                    .title {
+                        -webkit-text-stroke: 1px #fff;
+                        font-size: 16px;
+                    }
+
+                    .tech {
+                        gap: 4px;
+
+                        .stack {
+                            padding: 2px 8px;
+                            font-size: 10px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 250px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .our-works {
+
+        .our-works-container {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+            gap: 40px;
+
+            .our-works-projects-single {
+                margin-top: 0 !important;
+
+                .info {
+
+                    .title {
+                        font-size: 14px;
+                    }
+
+                    .tech {
+                        gap: 4px;
+
+                        .stack {
+
+                            padding: 2px 6px;
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 250px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .our-works {
+
+        .our-works-container {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: hidden;
+            gap: 40px;
+
+            .our-works-projects-single {
+                margin-top: 0 !important;
+
+                .info {
+
+                    .title {
+                        font-size: 11px;
+                    }
+
+                    .tech {
+                        gap: 4px;
+
+                        .stack {
+
+                            padding: 2px 4px;
+                            font-size: 8px;
+                        }
+                    }
+                }
+
+                img {}
+
+                .taskbar {
+                    .dots {}
+
+                    .task-url {
+
+                        .url-bar {
+                            width: 200px;
+                            text-align: center;
+                            padding: 5px 0;
+                            font-size: 9px;
+                        }
+                    }
+                }
+
+            }
+
+        }
     }
 }

@@ -21,7 +21,7 @@ export const dataList = [
     {
         image: PROJECT2,
         label: 'Featured Project',
-        title: 'Black lion Music Group',
+        title: 'Black lion Music ',
         link: 'https://www.blacklionapp.xyz',
         description: 'Blacklion as a company with laser focus on music and technology, we have created this NEW products which are already disrupting the music industry in a big way!',
         techs: [
@@ -62,11 +62,9 @@ export const dataList = [
         description: `We help AI tools do what they do best, by supplying them with the right data.`,
         techs: [
             'Angular',
-            'Web3 Js',
-            'Express Js',
+            'Node Js',
             'Python',
-            'Three.js',
-            'SQL Server'
+            'SQL'
         ]
     },
     {
@@ -76,11 +74,8 @@ export const dataList = [
         link: 'https://www.comproventures.com',
         description: `A portfolio for a client to run their PPC and use the website for thier business purposes.`,
         techs: [
-            'Html',
-            'Css',
+            'Html/Css',
             'Javascript',
-            'JQuery',
-            'Lightbox',
             'Bootstrap'
         ]
     }
