@@ -1,0 +1,77 @@
+.projects-container-view {
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 80px);
+}
+
+@media only screen and (max-width: 1200px) {
+    .projects-container-view {
+        height: calc(100vh - 180px);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .projects-container-view {
+        height: calc(100vh - 200px);
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .projects-container-view {
+        height: calc(100vh - 240px);
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    .projects-container-view {
+        height: calc(100vh - 280px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .projects-container-view {
+        height: calc(100vh - 350px);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .projects-container-view {
+        height: calc(100vh - 400px);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .projects-container-view {
+        height: calc(100vh - 430px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .projects-container-view {
+        height: calc(100vh - 470px);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .projects-container-view {
+        height: calc(100vh - 510px);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .projects-container-view {
+        height: calc(100vh - 550px);
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .projects-container-view {
+        height: calc(100vh - 590px);
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .projects-container-view {
+        height: calc(100vh - 630px);
+    }
+}

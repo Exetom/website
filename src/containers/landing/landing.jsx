@@ -46,7 +46,9 @@ const Landing = () => {
                 <Skills />
             </Section>
 
-            {/* <Contact /> */}
+            <Section>
+                <Contact />
+            </Section>
 
             <Footer />
         </div>

@@ -25,8 +25,7 @@ const Footer = () => {
                             </div>
 
                             <p class="mt-6 max-w-md text-center leading-relaxed text-[#eeeeee] sm:max-w-xs sm:text-left">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-                                cum itaque neque.
+                                At Exetom, we deliver innovative IT solutions that empower businesses to achieve operational excellence and drive digital transformation. Our expertise in technology integration and customized support ensures seamless and secure IT operations tailored to your unique needs.
                             </p>
                         </div>
 
@@ -159,7 +158,7 @@ const Footer = () => {
                                         </svg>
 
                                         <address class="-mt-0.5 flex-1 not-italic text-[#eeeeee]">
-                                            17a Shrubland Rd, Banstead, England
+                                            17a Shrubland Road, Banstead England, SM7 2ES
                                         </address>
                                     </li>
                                 </ul>

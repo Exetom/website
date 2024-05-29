@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import MAP from "../../../assets/map.svg";
 import { FaCheck } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 import Container from '../../container/container';
 
 const Partners = () => {
@@ -79,6 +80,12 @@ const Partners = () => {
 
                         </div>
                         <div className='gird-column-img'>
+                            <div className="markers">
+                                <span data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-offset="350" data-aos-delay="450" className="marker marker-1"><MdLocationOn color='#ef2737' /><span>Pakistan</span></span>
+                                <span data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-offset="350" data-aos-delay="450" className="marker marker-2"><MdLocationOn color='#ef2737' /><span>UAE</span></span>
+                                <span data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-offset="350" data-aos-delay="450" className="marker marker-3"><MdLocationOn color='#ef2737' /><span>UK</span></span>
+                                <span data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-offset="350" data-aos-delay="450" className="marker marker-4"><MdLocationOn color='#ef2737' /><span>USA</span></span>
+                            </div>
                             <img data-aos="fade-up-left" src={MAP} alt="" className='map-image' />
                         </div>
                     </div>

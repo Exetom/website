@@ -12,7 +12,7 @@ const OurProjects = () => {
                     Projects
                 </span>
             </div>
-            <div className='relative w-full h-[calc(100vh-80px)]'>
+            <div className='projects-container-view'>
                 <Projects />
             </div>
         </div>
