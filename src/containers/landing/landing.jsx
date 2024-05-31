@@ -10,6 +10,7 @@ import Work from "../../components/landing/work/work";
 import Skills from "../../components/landing/skills/skills";
 import Contact from "../../components/landing/contact/contact";
 import Footer from "../../components/landing/footer/footer";
+import ServeCard from "../../components/landing/serveCard/serveCard";
 
 const Section = ({ children }) => {
     return (<div className="landing-section">{children}</div>)
@@ -23,8 +24,12 @@ const Landing = () => {
             <Partners />
 
             <Section>
-                <OurProjects />
+                <ServeCard />
             </Section>
+
+            {/* <Section>
+                <OurProjects />
+            </Section> */}
 
             <Section>
                 <Insights />

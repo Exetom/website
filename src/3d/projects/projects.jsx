@@ -16,7 +16,7 @@ import IMG7 from "../../assets/projects/project7.jpg";
 import IMG8 from "../../assets/projects/project8.jpg";
 import IMG9 from "../../assets/projects/project9.jpg";
 import IMG10 from "../../assets/projects/project10.jpg";
-import WORK from "../../assets/logo-dark.jpg";
+import WORK from "../../assets/light-logo-black-bg.jpg";
 
 const imageArray = ['', IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10]
 
@@ -61,12 +61,12 @@ function Card({ url, ...props }) {
     const pointerOver = (e) => (e.stopPropagation(), hover(true))
     const pointerOut = () => hover(false)
     useFrame((state, delta) => {
-        easing.damp3(ref.current.scale, hovered ? 1.15 : 1, 0.1, delta)
+        easing.damp3(ref.current.scale, hovered ? 2.2 : 1, 0.1, delta)
         easing.damp(ref.current.material, 'radius', hovered ? 0.25 : 0.1, 0.2, delta)
-        easing.damp(ref.current.material, 'zoom', hovered ? 1 : 1.5, 0.2, delta)
+        easing.damp(ref.current.material, 'zoom', hovered ? 0.7 : 1.5, 0.2, delta)
     })
     return (
-        <Image ref={ref} url={url} transparent side={THREE.DoubleSide} onPointerOver={pointerOver} onPointerOut={pointerOut} {...props}>
+        <Image ref={ref} url={url} transparent side={THREE.DoubleSide} onPointerOver={pointerOver} onPointerOut={pointerOut} {...props} >
             <bentPlaneGeometry args={[0.1, 1, 1, 20, 20]} />
         </Image>
     )

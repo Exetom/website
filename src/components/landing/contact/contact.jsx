@@ -1,8 +1,27 @@
 import React from 'react';
 import { FaWhatsapp } from "react-icons/fa";
-
+import emailjs from "@emailjs/browser";
+import { keys } from '../../../utils/keys';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(keys.service_key, keys.template_id, e.target, keys.public_key).then(() => {
+            e.target.name.value = "";
+            e.target.email.value = "";
+            e.target.textarea.value = "";
+            toast.success("Your Email Sent Successfully")
+            emailjs.sendForm(keys.service_key, keys.template_reply_id, e.target, keys.public_key)
+        }).catch((err) => {
+            console.log(err);
+            toast.error("Error Sending Email")
+        })
+
+    }
+
     return (
         <div className='w-full'>
             <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -82,18 +101,18 @@ const Contact = () => {
                         </div>
                         <div class="card h-fit max-w-6xl p-5 md:p-12" id="form">
                             <h2 class="mb-4 text-2xl font-bold">Ready to Get Started?</h2>
-                            <form id="contactForm">
+                            <form id="contactForm" onSubmit={handleSubmit}>
                                 <div class="mb-6">
                                     <div class="mx-0 mb-1 sm:mb-4">
                                         <div class="mx-0 mb-1 sm:mb-4">
-                                            <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" name="name" />
+                                            <label for="name" class="pb-1 text-xs uppercase tracking-wider"></label><input type="text" id="name" autocomplete="given-name" placeholder="Your name" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" name="name" required />
                                         </div>
                                         <div class="mx-0 mb-1 sm:mb-4">
-                                            <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" name="email" />
+                                            <label for="email" class="pb-1 text-xs uppercase tracking-wider"></label><input type="email" id="email" autocomplete="email" placeholder="Your email address" class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" name="email" required />
                                         </div>
                                     </div>
                                     <div class="mx-0 mb-1 sm:mb-4">
-                                        <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0"></textarea>
+                                        <label for="textarea" class="pb-1 text-xs uppercase tracking-wider"></label><textarea id="textarea" name="description" cols="30" rows="5" placeholder="Write your message..." class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md sm:mb-0" required ></textarea>
                                     </div>
                                 </div>
                                 <div class="text-center">

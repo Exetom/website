@@ -61,8 +61,9 @@
             position: relative;
             display: inline-block;
             margin: 20px;
+            cursor: pointer;
 
-            a {
+            span {
                 color: white;
                 font-family: Helvetica, sans-serif;
                 font-weight: bold;
@@ -144,7 +145,7 @@
             }
 
             .booking-button {
-                a {}
+                span {}
             }
         }
 
@@ -184,7 +185,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 32px;
                     padding: 15px 30px;
 
@@ -249,7 +250,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 32px;
                     padding: 15px 30px;
 
@@ -294,7 +295,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 32px;
                     padding: 15px 30px;
 
@@ -338,7 +339,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 24px;
                     padding: 10px 20px;
 
@@ -381,7 +382,7 @@
 
             .booking-button {
 
-                a {
+                span {
                     font-size: 24px;
                     padding: 10px 20px;
 
@@ -425,7 +426,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 24px;
                     padding: 10px 20px;
 
@@ -469,7 +470,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 24px;
                     padding: 10px 20px;
 
@@ -512,7 +513,7 @@
             .booking-button {
 
 
-                a {
+                span {
                     font-size: 24px;
                     padding: 10px 20px;
 

@@ -6,8 +6,13 @@ import ROCKET from "../../../assets/rocket.svg"
 import STAR from "../../../assets/start.svg";
 import LETSGO from "../../../assets/lets-go.svg";
 import Container from '../../container/container';
+import { useNavigate } from 'react-router-dom';
 
 const Hero = () => {
+    const navigate = useNavigate();
+    const navigateToBooking = () => {
+        navigate('/booking');
+    }
     return (
         <Container>
             <div className='hero-container' id="hero">
@@ -25,8 +30,8 @@ const Hero = () => {
                         Access 15+ passionate software engineers who collaborate with everyone from individuals and startups to SMEs and large enterprises. We're all about crafting innovative, simple, and artistically designed software solutions.
                     </div>
                     <div >
-                        <div className="booking-button">
-                            <a href="#">Schedule Call</a>
+                        <div className="booking-button" onClick={navigateToBooking}>
+                            <span>Schedule Call</span>
                         </div>
                     </div>
                 </div>

@@ -5,6 +5,10 @@
 
 @import 'scss/imports.scss';
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Jost", sans-serif;
@@ -15,9 +19,4 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-}
-
-
-:root {
-  --themeColor1: #fdf3ff;
 }

@@ -7,6 +7,8 @@ import { BrowserRouter } from "react-router-dom";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { ParallaxProvider } from "react-scroll-parallax";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 AOS.init();
 
@@ -18,6 +20,16 @@ root.render(
         <App />
       </ParallaxProvider>
     </BrowserRouter>
+    <ToastContainer
+      position="bottom-left"
+      theme="dark"
+      autoClose={3500}
+      hideProgressBar={false}
+      newestOnTop={false}
+      closeOnClick
+      rtl={false}
+      draggable
+    />
   </React.StrictMode>
 );
 
