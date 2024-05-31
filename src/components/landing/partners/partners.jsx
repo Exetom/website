@@ -107,11 +107,11 @@ const Partners = () => {
                                     <span data-aos="fade-up-left" className='text-xl font-extrabold'>Enterprise</span>
                                     <span data-aos="fade-up-left" className=''>Build custom solutions and adopt advanced technologies for your organization to:</span>
                                     <ul className='serve-ul mt-3'>
-                                        <li data-aos="fade-up-right" className='serve-li'>Idea &amp; Persona Validation</li>
-                                        <li data-aos="fade-up-left" className='serve-li'>UI &amp; UX Design</li>
-                                        <li data-aos="fade-up-right" className='serve-li'>Lo-Fi &amp; Hi-Fi Prototypes</li>
-                                        <li data-aos="fade-up-left" className='serve-li'>User Acceptance Testing</li>
-                                        <li data-aos="fade-up-right" className='serve-li'>Development &amp; Launch</li>
+                                        <li data-aos="fade-up-right" className='serve-li'>Accelerate digital transformation</li>
+                                        <li data-aos="fade-up-left" className='serve-li'>Lower integration costs</li>
+                                        <li data-aos="fade-up-right" className='serve-li'>Stream line business process</li>
+                                        <li data-aos="fade-up-left" className='serve-li'>Scale to meet market demands</li>
+                                        <li data-aos="fade-up-right" className='serve-li'>Maintain a competitive edge</li>
                                     </ul>
                                 </div>
                             </div>
@@ -126,11 +126,11 @@ const Partners = () => {
                             </div>
                         </div>
                         <div className={`serve-partners ${shaded ? "text-white" : "text-black"}`}>
-                            <div data-aos="fade-up-right" className="serve-partners-left">01/</div>
+                            <div data-aos="fade-up-right" className="serve-partners-left">02/</div>
                             <div className="serve-partners-right">
                                 <div className='w-full flex flex-col gap-2'>
-                                    <span data-aos="fade-up-left" className='text-xl font-extrabold'>Enterprise</span>
-                                    <span data-aos="fade-up-left" className=''>Build custom solutions and adopt advanced technologies for your organization to:</span>
+                                    <span data-aos="fade-up-left" className='text-xl font-extrabold'>Startups</span>
+                                    <span data-aos="fade-up-left" className=''>Take your product from an idea to the Minimum Viable Product (MVP) stage through:</span>
                                     <ul className='serve-ul mt-3'>
                                         <li data-aos="fade-up-right" className='serve-li'>Idea &amp; Persona Validation</li>
                                         <li data-aos="fade-up-left" className='serve-li'>UI &amp; UX Design</li>

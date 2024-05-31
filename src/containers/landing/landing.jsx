@@ -23,7 +23,7 @@ const Landing = () => {
 
             <Partners />
 
-            <Section>
+            {/* <Section>
                 <ServeCard />
             </Section>
 
@@ -53,7 +53,7 @@ const Landing = () => {
 
             <Section>
                 <Contact />
-            </Section>
+            </Section> */}
 
             <Footer />
         </div>

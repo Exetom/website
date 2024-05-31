@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import './loader.scss';
 import { useGSAP } from "@gsap/react";
-import VIDEO from "./../../assets/video1.mp4";
+import VIDEO1 from "./../../assets/video1.mp4";
+import VIDEO2 from "./../../assets/video2.mp4";
 
 gsap.registerPlugin(useGSAP);
 
@@ -91,7 +92,7 @@ const Loader = () => {
     return (
         <div ref={mainScreenScope} className='loader-container'>
             <video className="background-video" autoPlay loop muted>
-                <source src={VIDEO} type="video/mp4" />
+                <source src={window.innerWidth > 680 ? VIDEO1 : VIDEO2} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="header-revealer"></div>
