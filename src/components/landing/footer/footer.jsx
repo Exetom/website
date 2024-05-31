@@ -31,53 +31,53 @@ const Footer = () => {
 
                         <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
                             <div class="text-center sm:text-left">
-                                <p class="text-lg font-medium text-[#77089E]">About Us</p>
+                                <p class="text-lg font-medium text-[#77089E]">Reach Us</p>
 
                                 <ul class="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#">
-                                            Company History
-                                        </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                            Phone Call
+                                        </span>
                                     </li>
 
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#">
-                                            Meet the Team
-                                        </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                            Whatsapp
+                                        </span>
                                     </li>
 
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#">
-                                            Employee Handbook
-                                        </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                            Email
+                                        </span>
                                     </li>
 
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#"> Careers </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Google Meet </span>
                                     </li>
                                 </ul>
                             </div>
 
                             <div class="text-center sm:text-left">
-                                <p class="text-lg font-medium text-[#77089E]">Our Services</p>
+                                <p class="text-lg font-medium text-[#77089E]">More Services</p>
 
                                 <ul class="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#">
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
                                             Web Development
-                                        </a>
+                                        </span>
                                     </li>
 
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#"> Web Design </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Designing </span>
                                     </li>
 
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#"> Marketing </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Marketing </span>
                                     </li>
 
                                     <li>
-                                        <a class="text-[#eeeeee] transition hover:text-[#eeeeee]/75" href="#"> Google Ads </a>
+                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Google Ads </span>
                                     </li>
                                 </ul>
                             </div>
@@ -87,9 +87,8 @@ const Footer = () => {
 
                                 <ul class="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a
+                                        <span
                                             class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                                            href="#"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -107,13 +106,12 @@ const Footer = () => {
                                             </svg>
 
                                             <span class="flex-1 text-[#eeeeee]">info@exetom.com</span>
-                                        </a>
+                                        </span>
                                     </li>
 
                                     <li>
-                                        <a
+                                        <span
                                             class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
-                                            href="#"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
@@ -131,7 +129,7 @@ const Footer = () => {
                                             </svg>
 
                                             <span class="flex-1 text-[#eeeeee]">+ (966) 57 431 6855</span>
-                                        </a>
+                                        </span>
                                     </li>
 
                                     <li
@@ -172,19 +170,19 @@ const Footer = () => {
                     <div className="footer-bottom-container">
                         <div className='footer-bottom-title'>@2024 Exetom. All Rights Reserved</div>
                         <div className="socials">
-                            <a href="#" className='social-icon fb'>
+                            <a href="https://www.facebook.com/profile.php?id=61560092667594" className='social-icon fb'>
                                 <FaFacebookF />
                             </a>
-                            <a href="#" className='social-icon ins'>
+                            <a href="https://www.instagram.com/exetom_inc/" className='social-icon ins'>
                                 <FaInstagram />
                             </a>
-                            <a href="#" className='social-icon dri'>
+                            <a href="https://dribbble.com/exetom" className='social-icon dri'>
                                 <FaDribbble />
                             </a>
-                            <a href="#" className='social-icon lin'>
+                            <a href="https://www.linkedin.com/company/exetom" className='social-icon lin'>
                                 <FaLinkedinIn />
                             </a>
-                            <a href="#" className='social-icon twi'>
+                            <a href="https://www.linkedin.com/company/exetom" className='social-icon twi'>
                                 <FaTwitter />
                             </a>
                         </div>

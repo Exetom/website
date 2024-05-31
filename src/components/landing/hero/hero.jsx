@@ -13,6 +13,10 @@ const Hero = () => {
     const navigateToBooking = () => {
         navigate('/booking');
     }
+    const scrollToNextSection = () => {
+        const element = document.getElementById('partners');
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
     return (
         <Container>
             <div className='hero-container' id="hero">
@@ -39,10 +43,10 @@ const Hero = () => {
                     <img src={STAR} alt="" />
                 </div>
                 <div className='floating-obj-4 bounceUpDown'>
-                    <a href="#" className='relative'>
+                    <span className='relative cursor-pointer' onClick={scrollToNextSection}>
                         <img src={LETSGO} alt="" className='rotate-animation' />
                         <FaArrowDown size={24} className='center-absokute' />
-                    </a>
+                    </span>
                 </div>
             </div>
         </Container>

@@ -25,6 +25,11 @@ const BaseComponent = () => {
         navigate(link);
     }
 
+    const scrollToNextSection = (id) => {
+        setActive(false);
+        const element = document.getElementById(id);
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
     return (
         <div className={`w-full base-container overflow-x-hidden ${active ? 'overflow-hidden' : ''}`}>
             <Container>
@@ -66,19 +71,19 @@ const BaseComponent = () => {
                 <div className="menu-overlay">
                     <ul className="nav-menu-list">
                         <li data-aos="fade-right" data-aos-duration="1500" className="nav-menu-item">
-                            <a className="nav-menu-item left-anim" href=""><span>Who</span> we are?</a>
+                            <span className="nav-menu-item left-anim" onClick={() => scrollToNextSection('partners')}><span>Who</span> we are?</span>
                         </li>
                         <li data-aos="fade-left" data-aos-duration="1600" className="nav-menu-item">
-                            <a className="nav-menu-item right-anim" href=""><span>Our</span> Services</a>
+                            <span className="nav-menu-item right-anim" onClick={() => scrollToNextSection('our-service-section')}><span>Our</span> Services</span>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="1700" className="nav-menu-item">
-                            <a className="nav-menu-item left-anim" href=""><span>What</span> we do?</a>
+                            <span className="nav-menu-item left-anim" onClick={() => scrollToNextSection('what-we-do')}><span>What</span> we do?</span>
                         </li>
                         <li data-aos="fade-left" data-aos-duration="1800" className="nav-menu-item">
-                            <a className="nav-menu-item right-anim" href=""><span>Tech</span>nologies</a>
+                            <span className="nav-menu-item right-anim" onClick={() => scrollToNextSection('tech-sec-card')}><span>Tech</span>nologies</span>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="1900" className="nav-menu-item">
-                            <a className="nav-menu-item left-anim" href=""><span>Contact</span> Us</a>
+                            <span className="nav-menu-item left-anim" onClick={() => scrollToNextSection('contact-sec')}><span>Contact</span> Us</span>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="1900" className="nav-menu-item">
                             <div className="flex justify-center items-center gap-5 mt-3">

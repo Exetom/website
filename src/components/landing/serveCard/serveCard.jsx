@@ -4,7 +4,7 @@ import Container from '../../container/container'
 
 const ServeCard = () => {
     return (
-        <div className="w-full">
+        <div className="w-full" id="what-we-do">
             <Container>
                 <div className="w-full">
                     <div className="text-2xl uppercase tracking-widest font-bold text-center mb-10 text-[#880DB4]">

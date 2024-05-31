@@ -4,7 +4,7 @@ import Container from '../../container/container';
 
 const Services = () => {
     return (
-        <div className='w-full'>
+        <div className='w-full' id="our-service-section">
             <div className='general-section-title'>
                 <span className='general-section-title-text tracking-wider'>
                     <span className='general-section-title-border'>
@@ -27,7 +27,7 @@ const Services = () => {
                                         <p className='description'>
                                             {e.description}
                                         </p>
-                                        <a href="#" className='button'>See Details</a>
+                                        <span className='button'>See Details</span>
                                     </div>
                                 </div>
                             </div>

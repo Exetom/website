@@ -56,7 +56,7 @@ import Container from '../../container/container';
 const Skills = () => {
 
     return (
-        <div className='w-full'>
+        <div className='w-full' id="tech-sec-card">
             <div className='general-section-title'>
                 <span className='general-section-title-text tracking-wider'>
                     <span className='general-section-title-border'>
