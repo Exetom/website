@@ -27,9 +27,9 @@ const Landing = () => {
                 <ServeCard />
             </Section>
 
-            {/* <Section>
+            <Section>
                 <OurProjects />
-            </Section> */}
+            </Section>
 
             <Section>
                 <Insights />
