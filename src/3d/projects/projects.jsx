@@ -1,7 +1,7 @@
 // https://cydstumpel.nl/
 
 import * as THREE from 'three'
-import { useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { Image, Environment, ScrollControls, useScroll, useTexture } from '@react-three/drei'
 import { easing } from 'maath'

@@ -1,9 +1,9 @@
-import React from 'react'
-import Container from '../../components/container/container'
-import Laptop from '../../3d/laptop/laptop';
+import React, { lazy, Suspense } from 'react';
+import Container from '../../components/container/container';
 import { TbWorld } from "react-icons/tb";
 import { FaHandPointRight } from "react-icons/fa";
-import { CalendlyHtml } from '../../3d/laptop/utils';
+const Laptop = lazy(() => import('../../3d/laptop/laptop'));
+const CalendlyHtml = lazy(() => import('../../3d/laptop/utils').then(module => ({ default: module.CalendlyHtml })));
 
 const Booking = () => {
   return (
@@ -20,12 +20,16 @@ const Booking = () => {
           </div>
         </div>
         <div className='relative w-full hidden md:block  h-[40vh] sm:h-[60vh] md:h-[80vh] lg:h-[100vh] xl:h-[120vh]'>
-          <Laptop />
+          <Suspense fallback={<></>}>
+            <Laptop />
+          </Suspense>
         </div>
         <div className='relative w-full flex md:hidden justify-center'>
           <div className="iphone my-6">
             <div className="screen">
-              <CalendlyHtml />
+              <Suspense fallback={<></>}>
+                <CalendlyHtml />
+              </Suspense>
             </div>
             <div className="notch">
               <div className="camera"></div>
@@ -38,4 +42,4 @@ const Booking = () => {
   )
 }
 
-export default Booking
+export default Booking;

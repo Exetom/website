@@ -15,8 +15,8 @@ const Services = () => {
             </div>
             <Container>
                 <div className="services-container mt-40">
-                    {dataServiceList.map((e) => (
-                        <div data-aos={e.animation} className='service-inner-container'>
+                    {dataServiceList.map((e, idx) => (
+                        <div key={idx} data-aos={e.animation} className='service-inner-container'>
                             <div className="service-box" style={{ '--clr': e.color }}>
                                 <div className="service-box-content">
                                     <div className="service-box-content-icon">

@@ -1,3 +1,4 @@
+import React from 'react';
 import { MdWeb } from "react-icons/md";
 import { AiFillProduct } from "react-icons/ai";
 import { IoPulseOutline } from "react-icons/io5";

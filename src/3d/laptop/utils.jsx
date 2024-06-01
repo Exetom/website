@@ -1,27 +1,27 @@
-import * as THREE from 'three'
-import React, { useRef } from 'react'
-import { useFrame } from '@react-three/fiber'
+import * as THREE from 'three';
+import React, { useRef } from 'react';
+import { useFrame } from '@react-three/fiber';
 import { Html, useGLTF } from '@react-three/drei';
 import { InlineWidget } from "react-calendly";
 
 const CalendlyHtml = () => {
     return (
         <InlineWidget url="https://calendly.com/exetom2024/consultation-call" />
-    )
+    );
 }
 
 function LaptopModel(props) {
-    const group = useRef()
-    // Load model
-    const { nodes, materials } = useGLTF('/mac-draco.glb')
-    // Make it float
+    const group = useRef();
+    const { nodes, materials } = useGLTF('/mac-draco.glb');
+
     useFrame((state) => {
-        const t = state.clock.getElapsedTime()
-        group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, Math.cos(t / 2) / 20 + 0.25, 0.1)
-        group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 4) / 20, 0.1)
-        group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.1)
-        group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t / 2)) / 2, 0.1)
-    })
+        const t = state.clock.getElapsedTime();
+        group.current.rotation.x = THREE.MathUtils.lerp(group.current.rotation.x, Math.cos(t / 2) / 20 + 0.25, 0.1);
+        group.current.rotation.y = THREE.MathUtils.lerp(group.current.rotation.y, Math.sin(t / 4) / 20, 0.1);
+        group.current.rotation.z = THREE.MathUtils.lerp(group.current.rotation.z, Math.sin(t / 8) / 20, 0.1);
+        group.current.position.y = THREE.MathUtils.lerp(group.current.position.y, (-2 + Math.sin(t / 2)) / 2, 0.1);
+    });
+
     return (
         <group ref={group} {...props} dispose={null}>
             <group rotation-x={-0.425} position={[0, -0.04, 0.41]}>
@@ -44,7 +44,7 @@ function LaptopModel(props) {
             </group>
             <mesh material={materials.touchbar} geometry={nodes.touchbar.geometry} position={[0, -0.03, 1.2]} />
         </group>
-    )
+    );
 }
 
 export {

@@ -21,8 +21,20 @@ const BaseComponent = () => {
         };
     }, [active]);
 
-    const navigateToBooking = (link) => {
-        navigate(link);
+    const navigateToRoot = () => {
+        navigate("/");
+        if (active) {
+            setActive(false);
+        }
+    }
+    const navigateToBooking = () => {
+        navigate("/booking");
+        if (active) {
+            setActive(false);
+        }
+    }
+    const activeHandler = () => {
+        setActive(!active);
     }
 
     const scrollToNextSection = (id) => {
@@ -36,9 +48,9 @@ const BaseComponent = () => {
                 <nav className="base-navbar">
                     <div className="base-inner-container">
                         {active ? (
-                            <img src={LOGOLIGHT} alt="logo-image" className="nav-logo" onClick={() => { navigateToBooking('/'); setActive(false); }} />
+                            <img src={LOGOLIGHT} alt="logo-image" className="nav-logo" onClick={navigateToRoot} />
                         ) : (
-                            <img src={LOGO} alt="logo-image" className="nav-logo" onClick={() => navigateToBooking('/')} />
+                            <img src={LOGO} alt="logo-image" className="nav-logo" onClick={navigateToRoot} />
                         )}
                         <div className="nav-right-items">
                             <div className="lets-connect">
@@ -48,10 +60,10 @@ const BaseComponent = () => {
                                     <span className="text-[#3B054E] font-semibold">+ (966) 57 431 6855</span>
                                 </div>
                             </div>
-                            <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full" onClick={() => navigateToBooking('/booking')}>Book a meeting</button>
+                            <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full" onClick={navigateToBooking}>Book a meeting</button>
                             <div className="ml-10">
                                 <div className="nav-menu-container">
-                                    <div className={`nav-menu-btn ${active ? 'active' : ''}`} onClick={() => setActive(!active)}>
+                                    <div className={`nav-menu-btn ${active ? 'active' : ''}`} onClick={activeHandler}>
                                         <div className="circles">
                                             <div className="circle-1"></div>
                                             <div className="circle-2"></div>
@@ -95,7 +107,7 @@ const BaseComponent = () => {
                             </div>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="1900" className="nav-menu-item">
-                            <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full mt-5" onClick={() => { navigateToBooking('/booking'); setActive(false); }}>Book a meeting</button>
+                            <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full mt-5" onClick={navigateToBooking}>Book a meeting</button>
                         </li>
                     </ul>
                 </div>

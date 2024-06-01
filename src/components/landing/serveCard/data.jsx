@@ -1,10 +1,9 @@
+import React from 'react';
 import { MdOutlineIntegrationInstructions, MdVerified } from "react-icons/md";
 import { FaComments } from "react-icons/fa";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { BiSupport } from "react-icons/bi";
 import { GiProgression } from "react-icons/gi";
-
-
 
 export const data = [
     {
@@ -33,7 +32,7 @@ export const data = [
         animationDuration: "800",
         icon: <MdVerified />,
         title: "Proven Expertise",
-        description: "With years of experience in the industry, our team brings a wealth of knowledge and expertise to the table. We stay ahead of the curve, keeping up with the latest trends, technologies, and best practices to ensure that your business stays  ahead of the competition."
+        description: "With years of experience in the industry, our team brings a wealth of knowledge and expertise to the table. We stay ahead of the curve, keeping up with the latest trends, technologies, and best practices to ensure that your business stays ahead of the competition."
     },
     {
         animation: "fade-up-left",
@@ -47,7 +46,6 @@ export const data = [
         animationDuration: "800",
         icon: <GiProgression />,
         title: "Continuous Improvement",
-        description: "We believe in constantly evolving and refining our strategies to deliver maximum value to our clients. Through data-driven analysis, experimentation, and  optimization, we continuously strive to improve performance and achieve better results for our great customers."
+        description: "We believe in constantly evolving and refining our strategies to deliver maximum value to our clients. Through data-driven analysis, experimentation, and optimization, we continuously strive to improve performance and achieve better results for our great customers."
     },
-
-]
+];

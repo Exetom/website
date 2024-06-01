@@ -1,16 +1,16 @@
+import React, { lazy, Suspense } from "react";
+const Hero = lazy(() => import('../../components/landing/hero/hero'));
+const Partners = lazy(() => import('../../components/landing/partners/partners'));
+const OurProjects = lazy(() => import("../../components/landing/projects/projects"));
+const Insights = lazy(() => import("../../components/landing/insights/insights"));
+const Reviews = lazy(() => import("../../components/landing/reviews/reviews"));
+const Services = lazy(() => import("../../components/landing/services/services"));
+const Work = lazy(() => import("../../components/landing/work/work"));
+const Skills = lazy(() => import("../../components/landing/skills/skills"));
+const Contact = lazy(() => import("../../components/landing/contact/contact"));
+const Footer = lazy(() => import("../../components/landing/footer/footer"));
+const ServeCard = lazy(() => import("../../components/landing/serveCard/serveCard"));
 
-import React, { useEffect, useRef } from "react";
-import Hero from '../../components/landing/hero/hero'
-import Partners from '../../components/landing/partners/partners'
-import OurProjects from "../../components/landing/projects/projects";
-import Insights from "../../components/landing/insights/insights";
-import Reviews from "../../components/landing/reviews/reviews";
-import Services from "../../components/landing/services/services";
-import Work from "../../components/landing/work/work";
-import Skills from "../../components/landing/skills/skills";
-import Contact from "../../components/landing/contact/contact";
-import Footer from "../../components/landing/footer/footer";
-import ServeCard from "../../components/landing/serveCard/serveCard";
 
 const Section = ({ children }) => {
     return (<div className="landing-section">{children}</div>)
@@ -19,43 +19,65 @@ const Section = ({ children }) => {
 const Landing = () => {
     return (
         <div className='w-full'>
-            <Hero />
+            <Suspense fallback={<></>}>
+                <Hero />
+            </Suspense>
 
-            <Partners />
+            <Suspense fallback={<></>}>
+                <Partners />
+            </Suspense>
 
             <Section>
-                <ServeCard />
+                <Suspense fallback={<></>}>
+                    <ServeCard />
+                </Suspense>
             </Section>
 
             <Section>
-                <OurProjects />
+                <Suspense fallback={<></>}>
+                    <OurProjects />
+                </Suspense>
             </Section>
 
             <Section>
-                <Insights />
+                <Suspense fallback={<></>}>
+                    <Insights />
+                </Suspense>
             </Section>
 
             <Section>
-                <Reviews />
+                <Suspense fallback={<></>}>
+                    <Reviews />
+                </Suspense>
             </Section>
 
             <Section>
-                <Services />
+                <Suspense fallback={<></>}>
+                    <Services />
+                </Suspense>
             </Section>
 
             <Section>
-                <Work />
+                <Suspense fallback={<></>}>
+                    <Work />
+                </Suspense>
             </Section>
 
             <Section>
-                <Skills />
+                <Suspense fallback={<></>}>
+                    <Skills />
+                </Suspense>
             </Section>
 
             <Section>
-                <Contact />
+                <Suspense fallback={<></>}>
+                    <Contact />
+                </Suspense>
             </Section>
 
-            <Footer />
+            <Suspense fallback={<></>}>
+                <Footer />
+            </Suspense>
         </div>
     )
 }

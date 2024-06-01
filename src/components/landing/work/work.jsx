@@ -60,11 +60,12 @@ const Work = () => {
             <div className='our-works'>
                 <div ref={workContainerRef} className='our-works-container'>
                     {(dataList || []).map((project, i) => (
-                        <SingleProject
-                            key={i}
-                            index={i}
-                            {...project}
-                        />
+                        <div key={i}>
+                            <SingleProject
+                                index={i}
+                                {...project}
+                            />
+                        </div>
                     ))}
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.scss';
 import Navigation from "./navigation/navigation";
 import Loader from './components/loader/loader';

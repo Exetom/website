@@ -1,7 +1,7 @@
 import * as THREE from "three";
 import { Canvas } from "@react-three/fiber";
 import { ContactShadows, Float, Environment } from "@react-three/drei";
-import { Suspense, useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
 import AUDIO_1 from "../../assets/sounds/hit2.ogg";
@@ -10,26 +10,26 @@ import AUDIO_3 from "../../assets/sounds/hit4.ogg";
 
 export function Shapes() {
   return (
-      <Canvas
-        className="z-0"
-        shadows
-        gl={{ antialias: false }}
-        dpr={[1, 1.5]}
-        camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
-        style={{ width: "100%", height: '300px' }} 
-      >
-        <Suspense fallback={null}>
-          <Geometries />
-          <ContactShadows
-            position={[0, -3.5, 0]}
-            opacity={0.65}
-            scale={40}
-            blur={1}
-            far={9}
-          />
-          <Environment preset="studio" />
-        </Suspense>
-      </Canvas>
+    <Canvas
+      className="z-0"
+      shadows
+      gl={{ antialias: false }}
+      dpr={[1, 1.5]}
+      camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
+      style={{ width: "100%", height: '300px' }}
+    >
+      <Suspense fallback={null}>
+        <Geometries />
+        <ContactShadows
+          position={[0, -3.5, 0]}
+          opacity={0.65}
+          scale={40}
+          blur={1}
+          far={9}
+        />
+        <Environment preset="studio" />
+      </Suspense>
+    </Canvas>
   );
 }
 

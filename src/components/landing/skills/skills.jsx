@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import TECH_REACT from "../../../assets/technologies/react.png";
 import TECH_ANGULAR from "../../../assets/technologies/angular.png";
 import TECH_NEXT from "../../../assets/technologies/next.png"

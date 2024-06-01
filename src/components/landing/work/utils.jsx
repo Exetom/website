@@ -1,8 +1,10 @@
+import React from "react";
+
 function openLink(link, target = "_blank") {
     window.open(link, target)
 }
 export const SingleProject = (props) => {
-    const { image, index, title, techs, link } = props
+    const { image, index, title, techs, link, key } = props
     const handleOnClickWindow = () => {
         openLink(link)
     }
@@ -11,8 +13,8 @@ export const SingleProject = (props) => {
             <div className="info">
                 <div className="title"> {title}</div>
                 <div className="tech">
-                    {techs.map((tech) => (
-                        <span className="stack">{tech}</span>
+                    {techs.map((tech, idx) => (
+                        <span key={idx} className="stack">{tech}</span>
                     ))}
                 </div>
             </div>
