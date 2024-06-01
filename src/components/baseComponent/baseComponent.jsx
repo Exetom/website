@@ -95,7 +95,7 @@ const BaseComponent = () => {
                             </div>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="1900" className="nav-menu-item">
-                            <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full mt-5" onClick={() => navigateToBooking('/booking')}>Book a meeting</button>
+                            <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full mt-5" onClick={() => { navigateToBooking('/booking'); setActive(false); }}>Book a meeting</button>
                         </li>
                     </ul>
                 </div>

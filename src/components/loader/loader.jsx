@@ -3,7 +3,6 @@ import { gsap } from 'gsap';
 import './loader.scss';
 import { useGSAP } from "@gsap/react";
 import VIDEO1 from "./../../assets/video1.mp4";
-import VIDEO2 from "./../../assets/video2.mp4";
 
 gsap.registerPlugin(useGSAP);
 
@@ -85,14 +84,14 @@ const Loader = () => {
     const loaderFinishingAnimation = () => {
         gsap.to(loaderRef.current, { scale: 40, duration: 1, delay: 7, ease: "power2.inOut" })
         gsap.to(loaderRef.current, { rotate: 45, y: 500, x: 2000, duration: 1, delay: 7, ease: "power2.inOut" })
-        gsap.to(loadingScreen.current, { display: 'none', duration: 0.5, delay: 7.5, ease: "power1.inOut" })
-        gsap.to(mainScreenScope.current, { display: 'none', duration: 0.5, delay: 7.5, ease: "power1.inOut" })
+        gsap.to(loadingScreen.current, { display: 'none', duration: 0.5, delay: 7, ease: "power1.inOut" })
+        gsap.to(mainScreenScope.current, { display: 'none', duration: 0.5, delay: 7, ease: "power1.inOut" })
     }
 
     return (
         <div ref={mainScreenScope} className='loader-container'>
             <video className="background-video" autoPlay loop muted>
-                <source src={window.innerWidth > 680 ? VIDEO1 : VIDEO2} type="video/mp4" />
+                <source src={VIDEO1} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
             <div className="header-revealer"></div>
