@@ -18,81 +18,81 @@ const Footer = () => {
             </div>
             <div className="footer-content">
                 <Container>
-                    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                         <div>
-                            <div class="flex justify-center sm:justify-start">
+                            <div className="flex justify-center sm:justify-start">
                                 <img src={LOGO} alt="" />
                             </div>
 
-                            <p class="mt-6 max-w-md text-center leading-relaxed text-[#eeeeee] sm:max-w-xs sm:text-left">
+                            <p className="mt-6 max-w-md text-center leading-relaxed text-[#eeeeee] sm:max-w-xs sm:text-left">
                                 At Exetom, we deliver innovative IT solutions that empower businesses to achieve operational excellence and drive digital transformation. Our expertise in technology integration and customized support ensures seamless and secure IT operations tailored to your unique needs.
                             </p>
                         </div>
 
-                        <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
-                            <div class="text-center sm:text-left">
-                                <p class="text-lg font-medium text-[#77089E]">Reach Us</p>
+                        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:col-span-2">
+                            <div className="text-center sm:text-left">
+                                <p className="text-lg font-medium text-[#77089E]">Reach Us</p>
 
-                                <ul class="mt-8 space-y-4 text-sm">
+                                <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
                                             Phone Call
                                         </span>
                                     </li>
 
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
                                             Whatsapp
                                         </span>
                                     </li>
 
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
                                             Email
                                         </span>
                                     </li>
 
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Google Meet </span>
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Google Meet </span>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="text-center sm:text-left">
-                                <p class="text-lg font-medium text-[#77089E]">More Services</p>
+                            <div className="text-center sm:text-left">
+                                <p className="text-lg font-medium text-[#77089E]">More Services</p>
 
-                                <ul class="mt-8 space-y-4 text-sm">
+                                <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75">
                                             Web Development
                                         </span>
                                     </li>
 
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Designing </span>
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Designing </span>
                                     </li>
 
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Marketing </span>
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Marketing </span>
                                     </li>
 
                                     <li>
-                                        <span class="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Google Ads </span>
+                                        <span className="text-[#eeeeee] transition hover:text-[#eeeeee]/75"> Google Ads </span>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="text-center sm:text-left">
-                                <p class="text-lg font-medium text-[#77089E]">Contact Us</p>
+                            <div className="text-center sm:text-left">
+                                <p className="text-lg font-medium text-[#77089E]">Contact Us</p>
 
-                                <ul class="mt-8 space-y-4 text-sm">
+                                <ul className="mt-8 space-y-4 text-sm">
                                     <li>
                                         <span
-                                            class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                            className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                class="size-5 shrink-0 text-[#77089E]"
+                                                className="size-5 shrink-0 text-[#77089E]"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
@@ -105,17 +105,17 @@ const Footer = () => {
                                                 />
                                             </svg>
 
-                                            <span class="flex-1 text-[#eeeeee]">info@exetom.com</span>
+                                            <span className="flex-1 text-[#eeeeee]">info@exetom.com</span>
                                         </span>
                                     </li>
 
                                     <li>
                                         <span
-                                            class="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                            className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                         >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
-                                                class="size-5 shrink-0 text-[#77089E]"
+                                                className="size-5 shrink-0 text-[#77089E]"
                                                 fill="none"
                                                 viewBox="0 0 24 24"
                                                 stroke="currentColor"
@@ -128,16 +128,16 @@ const Footer = () => {
                                                 />
                                             </svg>
 
-                                            <span class="flex-1 text-[#eeeeee]">+ (966) 57 431 6855</span>
+                                            <span className="flex-1 text-[#eeeeee]">+ (966) 57 431 6855</span>
                                         </span>
                                     </li>
 
                                     <li
-                                        class="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
+                                        className="flex items-start justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end"
                                     >
                                         <svg
                                             xmlns="http://www.w3.org/2000/svg"
-                                            class="size-5 shrink-0 text-[#77089E]"
+                                            className="size-5 shrink-0 text-[#77089E]"
                                             fill="none"
                                             viewBox="0 0 24 24"
                                             stroke="currentColor"
@@ -155,7 +155,7 @@ const Footer = () => {
                                             />
                                         </svg>
 
-                                        <address class="-mt-0.5 flex-1 not-italic text-[#eeeeee]">
+                                        <address className="-mt-0.5 flex-1 not-italic text-[#eeeeee]">
                                             17a Shrubland Road, Banstead England, SM7 2ES
                                         </address>
                                     </li>

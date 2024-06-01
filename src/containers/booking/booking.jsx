@@ -23,13 +23,13 @@ const Booking = () => {
           <Laptop />
         </div>
         <div className='relative w-full flex md:hidden justify-center'>
-          <div class="iphone my-6">
-            <div class="screen">
+          <div className="iphone my-6">
+            <div className="screen">
               <CalendlyHtml />
             </div>
-            <div class="notch">
-              <div class="camera"></div>
-              <div class="speaker"></div>
+            <div className="notch">
+              <div className="camera"></div>
+              <div className="speaker"></div>
             </div>
           </div>
         </div>

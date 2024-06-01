@@ -14,13 +14,13 @@ const ServeCard = () => {
                         Partner with Exetom. Inc today and take your business to new heights. With our comprehensive services, unwavering support, and commitment to excellence, we're here to help you succeed in the digital era.
                     </div>
                 </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 flex-wrap">
-                    {(data || []).map((item) => (
-                        <div data-aos={item.animation} data-aos-duration={item.animationDuration} class="flex gap-4 justify-center items-start sm:items-center flex-col shadow-lg p-10">
-                            <span class="text-violet-600 bg-violet-500/10 p-3 rounded-full">{item.icon}</span>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 flex-wrap">
+                    {(data || []).map((item, idx) => (
+                        <div key={idx} data-aos={item.animation} data-aos-duration={item.animationDuration} className="flex gap-4 justify-center items-start sm:items-center flex-col shadow-lg p-10">
+                            <span className="text-violet-600 bg-violet-500/10 p-3 rounded-full">{item.icon}</span>
                             <div>
-                                <h3 class="font-semibold text-xl text-left sm:text-center">{item.title}</h3>
-                                <p class="mt-1 text-gray-500 text-left sm:text-center"> {item.description}</p>
+                                <h3 className="font-semibold text-xl text-left sm:text-center">{item.title}</h3>
+                                <p className="mt-1 text-gray-500 text-left sm:text-center"> {item.description}</p>
                             </div>
                         </div>
                     ))}
