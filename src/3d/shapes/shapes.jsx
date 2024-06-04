@@ -4,9 +4,9 @@ import { ContactShadows, Float, Environment } from "@react-three/drei";
 import React, { Suspense, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 
-import AUDIO_1 from "../../assets/sounds/hit2.ogg";
-import AUDIO_2 from "../../assets/sounds/hit3.ogg";
-import AUDIO_3 from "../../assets/sounds/hit4.ogg";
+import AUDIO_1 from "@assets/sounds/hit2.ogg";
+import AUDIO_2 from "@assets/sounds/hit3.ogg";
+import AUDIO_3 from "@assets/sounds/hit4.ogg";
 
 export function Shapes() {
   return (

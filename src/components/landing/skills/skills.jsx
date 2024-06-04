@@ -1,70 +1,67 @@
 import React from 'react';
-import TECH_REACT from "../../../assets/technologies/react.png";
-import TECH_ANGULAR from "../../../assets/technologies/angular.png";
-import TECH_NEXT from "../../../assets/technologies/next.png"
-import TECH_VUE from "../../../assets/technologies/vue.png";
-import TECH_NODE from "../../../assets/technologies/node-js.png";
-import TECH_EXPRESS from "../../../assets/technologies/express.png";
-import TECH_NEST from "../../../assets/technologies/nest.png";
-import TECH_FLASK from "../../../assets/technologies/flask.png";
-import TECH_IONIC from "../../../assets/technologies/ionic.png";
+import BannerText from '../../bannerText/bannerText';
+
+import TECH_REACT from "@assets/technologies/react.png";
+import TECH_ANGULAR from "@assets/technologies/angular.png";
+import TECH_NEXT from "@assets/technologies/next.png"
+import TECH_VUE from "@assets/technologies/vue.png";
+import TECH_NODE from "@assets/technologies/node-js.png";
+import TECH_EXPRESS from "@assets/technologies/express.png";
+import TECH_NEST from "@assets/technologies/nest.png";
+import TECH_FLASK from "@assets/technologies/flask.png";
+import TECH_IONIC from "@assets/technologies/ionic.png";
 
 
-import TECH_REACTNATIVE from "../../../assets/technologies/reactnative.png";
-import TECH_NATIVESCRIPT from "../../../assets/technologies/nativescript.webp";
-import TECH_ANDROID from "../../../assets/technologies/android.png";
-import TECH_SWIFT from "../../../assets/technologies/swift.png";
-import TECH_KOTLIN from "../../../assets/technologies/kotlin.png";
-import TECH_EXPO from "../../../assets/technologies/expo.png";
+import TECH_REACTNATIVE from "@assets/technologies/reactnative.png";
+import TECH_NATIVESCRIPT from "@assets/technologies/nativescript.webp";
+import TECH_ANDROID from "@assets/technologies/android.png";
+import TECH_SWIFT from "@assets/technologies/swift.png";
+import TECH_KOTLIN from "@assets/technologies/kotlin.png";
+import TECH_EXPO from "@assets/technologies/expo.png";
 
-import TECH_HTML from "../../../assets/technologies/html.png";
-import TECH_CSS from "../../../assets/technologies/css.png";
-import TECH_JS from "../../../assets/technologies/js.png";
-import TECH_TS from "../../../assets/technologies/ts.png";
-import TECH_GO from "../../../assets/technologies/go.png";
-import TECH_PYTHON from "../../../assets/technologies/python.png";
-import TECH_RUST from "../../../assets/technologies/rust.png";
-import TECH_JAVA from "../../../assets/technologies/java.webp";
+import TECH_HTML from "@assets/technologies/html.png";
+import TECH_CSS from "@assets/technologies/css.png";
+import TECH_JS from "@assets/technologies/js.png";
+import TECH_TS from "@assets/technologies/ts.png";
+import TECH_GO from "@assets/technologies/go.png";
+import TECH_PYTHON from "@assets/technologies/python.png";
+import TECH_RUST from "@assets/technologies/rust.png";
+import TECH_JAVA from "@assets/technologies/java.webp";
 
-import TECH_TAILWIND from "../../../assets/technologies/tailwind.png";
-import TECH_MUI from "../../../assets/technologies/mui.png";
-import TECH_REDUX from "../../../assets/technologies/redux.png";
-import TECH_REACTQUERY from "../../../assets/technologies/reactquery.png";
+import TECH_TAILWIND from "@assets/technologies/tailwind.png";
+import TECH_MUI from "@assets/technologies/mui.png";
+import TECH_REDUX from "@assets/technologies/redux.png";
+import TECH_REACTQUERY from "@assets/technologies/reactquery.png";
 
-import TECH_MONGODB from "../../../assets/technologies/mongodb.png";
-import TECH_FIREBASE from "../../../assets/technologies/Firebase.png";
-import TECH_POSTGRES from "../../../assets/technologies/postger.png";
-import TECH_MYSQL from "../../../assets/technologies/mysql.png";
-import TECH_PRISMA from "../../../assets/technologies/prisma.webp";
-import TECH_GRAPHQL from "../../../assets/technologies/graphql.png";
+import TECH_MONGODB from "@assets/technologies/mongodb.png";
+import TECH_FIREBASE from "@assets/technologies/Firebase.png";
+import TECH_POSTGRES from "@assets/technologies/postger.png";
+import TECH_MYSQL from "@assets/technologies/mysql.png";
+import TECH_PRISMA from "@assets/technologies/prisma.webp";
+import TECH_GRAPHQL from "@assets/technologies/graphql.png";
 
-import TECH_TAURI from "../../../assets/technologies/tauri.svg";
-import TECH_DOCKER from "../../../assets/technologies/docker.webp";
-import TECH_FIGMA from "../../../assets/technologies/figma.png";
-import TECH_FRAMER from "../../../assets/technologies/framer.png";
-import TECH_GALAXY from "../../../assets/technologies/glaxy.png";
-import TECH_STRIP from "../../../assets/technologies/stripe.webp";
-import TECH_WEBHOOK from "../../../assets/technologies/webhook.svg";
+import TECH_TAURI from "@assets/technologies/tauri.svg";
+import TECH_DOCKER from "@assets/technologies/docker.webp";
+import TECH_FIGMA from "@assets/technologies/figma.png";
+import TECH_FRAMER from "@assets/technologies/framer.png";
+import TECH_GALAXY from "@assets/technologies/glaxy.png";
+import TECH_STRIP from "@assets/technologies/stripe.webp";
+import TECH_WEBHOOK from "@assets/technologies/webhook.svg";
 
-import TECH_AWS from "../../../assets/technologies/aws.png";
-import TECH_AZURE from "../../../assets/technologies/azure.png";
-import TECH_GCP from "../../../assets/technologies/gcp.png";
-import TECH_DIGITAL_OCEAN from "../../../assets/technologies/digitalocean.png";
-import TECH_CPANEL from "../../../assets/technologies/cpanel.webp";
+import TECH_AWS from "@assets/technologies/aws.png";
+import TECH_AZURE from "@assets/technologies/azure.png";
+import TECH_GCP from "@assets/technologies/gcp.png";
+import TECH_DIGITAL_OCEAN from "@assets/technologies/digitalocean.png";
+import TECH_CPANEL from "@assets/technologies/cpanel.webp";
 import Container from '../../container/container';
 
 const Skills = () => {
 
     return (
         <div className='w-full' id="tech-sec-card">
-            <div className='general-section-title'>
-                <span className='general-section-title-text tracking-wider'>
-                    <span className='general-section-title-border'>
-                        Tech <span className='border-bar'></span>
-                    </span>
-                    Stack
-                </span>
-            </div>
+
+            <BannerText title="Tech" subTitle="Stack" />
+
             <Container>
                 <div className="skills-container mt-20">
                     <div className="skill-sec">

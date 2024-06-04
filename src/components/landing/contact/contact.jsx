@@ -45,7 +45,7 @@ const Contact = () => {
                             </p>
                             <ul className="mb-6 md:mb-0">
                                 <li className="flex">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2a0c34] text-gray-50">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#0b3f78] text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round" className="h-6 w-6">
@@ -63,7 +63,7 @@ const Contact = () => {
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2a0c34] text-gray-50">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#0b3f78] text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round" className="h-6 w-6">
@@ -82,7 +82,7 @@ const Contact = () => {
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#2a0c34] text-gray-50">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#0b3f78] text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round" className="h-6 w-6">
@@ -116,7 +116,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="w-full bg-[#2a0d34] text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                                    <button type="submit" className="w-full bg-[#0b3f78] text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
                                 </div>
                             </form>
                         </div>

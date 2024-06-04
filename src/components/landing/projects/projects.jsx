@@ -1,17 +1,12 @@
 import React from 'react';
 import { Projects } from '../../../3d/projects/projects';
+import BannerText from "../../bannerText/bannerText";
 
 const OurProjects = () => {
     return (
         <div className='w-full'>
-            <div className='general-section-title'>
-                <span className='general-section-title-text tracking-wider'>
-                    <span className='general-section-title-border'>
-                        Our <span className='border-bar'></span>
-                    </span>
-                    Projects
-                </span>
-            </div>
+            <BannerText title="Our" subTitle="Projects" />
+
             <div className='projects-container-view'>
                 <Projects />
             </div>

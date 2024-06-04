@@ -1,9 +1,9 @@
-import PROJECT1 from "./../../../assets/work/socialchamp.png";
-import PROJECT2 from "./../../../assets/work/blacklion.png";
-import PROJECT3 from "./../../../assets/work/bridgestone.png";
-import PROJECT4 from "./../../../assets/work/bright.png";
-import PROJECT5 from "./../../../assets/work/gather360.png";
-import PROJECT6 from "./../../../assets/work/compro.png";
+import PROJECT1 from "@assets/work/socialchamp.png";
+import PROJECT2 from "@assets/work/blacklion.png";
+import PROJECT3 from "@assets/work/bridgestone.png";
+import PROJECT4 from "@assets/work/bright.png";
+import PROJECT5 from "@assets/work/gather360.png";
+import PROJECT6 from "@assets/work/compro.png";
 
 export const dataList = [
     {

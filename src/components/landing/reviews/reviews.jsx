@@ -1,18 +1,13 @@
 import React from 'react'
 import { datalist } from "./data";
 import { Text } from "./utils";
+import BannerText from '../../bannerText/bannerText';
 
 const Reviews = () => {
     return (
         <div className='w-full'>
-            <div className='general-section-title'>
-                <span className='general-section-title-text tracking-wider'>
-                    <span className='general-section-title-border'>
-                        Some <span className='border-bar'></span>
-                    </span>
-                    Review
-                </span>
-            </div>
+
+            <BannerText title="Some" subTitle="Review" />
             <div className='ms-reviews pt-20'>
                 <div className='ms-reviews-list'>
                     {(datalist || []).map((item, i) => (

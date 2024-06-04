@@ -6,17 +6,17 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { Image, Environment, ScrollControls, useScroll, useTexture } from '@react-three/drei'
 import { easing } from 'maath'
 import './utils';
-import IMG1 from "../../assets/projects/project1.jpg";
-import IMG2 from "../../assets/projects/project2.jpg";
-import IMG3 from "../../assets/projects/project3.jpg";
-import IMG4 from "../../assets/projects/project4.jpg";
-import IMG5 from "../../assets/projects/project5.jpg";
-import IMG6 from "../../assets/projects/project6.jpg";
-import IMG7 from "../../assets/projects/project7.jpg";
-import IMG8 from "../../assets/projects/project8.jpg";
-import IMG9 from "../../assets/projects/project9.jpg";
-import IMG10 from "../../assets/projects/project10.jpg";
-import WORK from "../../assets/light-logo-black-bg.jpg";
+import IMG1 from "@assets/projects/project1.jpg";
+import IMG2 from "@assets/projects/project2.jpg";
+import IMG3 from "@assets/projects/project3.jpg";
+import IMG4 from "@assets/projects/project4.jpg";
+import IMG5 from "@assets/projects/project5.jpg";
+import IMG6 from "@assets/projects/project6.jpg";
+import IMG7 from "@assets/projects/project7.jpg";
+import IMG8 from "@assets/projects/project8.jpg";
+import IMG9 from "@assets/projects/project9.jpg";
+import IMG10 from "@assets/projects/project10.jpg";
+import WORK from "@assets/light-logo-black-bg.jpg";
 
 const imageArray = ['', IMG1, IMG2, IMG3, IMG4, IMG5, IMG6, IMG7, IMG8, IMG9, IMG10]
 

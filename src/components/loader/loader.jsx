@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import { gsap } from 'gsap';
-import './loader.scss';
 import { useGSAP } from "@gsap/react";
-import VIDEO1 from "./../../assets/video1.mp4";
 
 gsap.registerPlugin(useGSAP);
 
@@ -90,10 +88,28 @@ const Loader = () => {
 
     return (
         <div ref={mainScreenScope} className='loader-container'>
-            <video className="background-video" autoPlay loop muted>
-                <source src={VIDEO1} type="video/mp4" />
-                Your browser does not support the video tag.
-            </video>
+            <div className="bg-animation-container">
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+                <div className="animate-boxes"></div>
+            </div>
             <div className="header-revealer"></div>
             <div ref={loadingScreen} className="loading-screen">
                 <div className="loader" ref={loaderRef}>

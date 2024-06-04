@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: './src/index.jsx',
@@ -29,14 +30,10 @@ module.exports = {
             },
             {
                 test: /\.(png|jpe?g|gif|webp)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]',
-                        },
-                    },
-                ],
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name][ext]'
+                }
             },
             {
                 test: /\.svg$/,
@@ -50,19 +47,18 @@ module.exports = {
             },
             {
                 test: /\.(wav|mp3|ogg|mp4|webm)$/i,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name].[ext]',
-                        },
-                    },
-                ],
+                type: 'asset/resource',
+                generator: {
+                    filename: 'assets/[name][ext]'
+                }
             },
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '@assets': path.resolve(__dirname, 'public/assets'),
+        },
     },
     plugins: [
         new CleanWebpackPlugin(),
@@ -72,6 +68,11 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: '[name].[contenthash].css',
+        }),
+        new CopyWebpackPlugin({
+            patterns: [
+                { from: 'public/assets', to: 'assets' }
+            ]
         }),
     ],
     optimization: {

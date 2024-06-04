@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, useNavigate } from "react-router-dom";
-import LOGO from "../../assets/logo-dark-tranparent.png";
-import LOGOLIGHT from "../../assets/logo-light-tranparent.png";
-import PHONE_SVG from "../../assets/phone.svg";
-import PHONE_SVG_WHITE from "../../assets/phone-white.svg";
+import LOGO from "@assets/logo-dark-tranparent.png";
+import LOGOLIGHT from "@assets/logo-light-tranparent.png";
+import PHONE_SVG from "@assets/phone.svg";
+import PHONE_SVG_WHITE from "@assets/phone-white.svg";
 import Container from '../container/container';
 
 const BaseComponent = () => {

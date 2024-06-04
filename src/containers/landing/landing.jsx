@@ -57,11 +57,11 @@ const Landing = () => {
                 </Suspense>
             </Section>
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Work />
                 </Suspense>
-            </Section>
+            </Section> */}
 
             <Section>
                 <Suspense fallback={<></>}>

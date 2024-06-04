@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import MAP from "../../../assets/map.svg";
+import MAP from "@assets/map.svg";
 import { FaCheck } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 import Container from '../../container/container';
@@ -34,13 +34,13 @@ const Partners = () => {
     }
 
     return (
-        <div className={`${shaded ? 'bg-[#1a0b1a] ' : ''}w-full min-h-screen background-animation pt-[7.5rem]`} id='partners'>
+        <div className={`${shaded ? 'bg-[#0b1927] ' : ''}w-full min-h-screen background-animation pt-[7.5rem]`} id='partners'>
             <Container>
                 <div className="partners-upper-container">
                     <div className="gird-container-main">
                         <div className='gird-column-text'>
                             <div data-aos="fade-up-right">
-                                <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#77089E]'} title`}>We are Exetom</div>
+                                <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#0b3f78]'} title`}>We are Exetom</div>
                             </div>
                             <div data-aos="fade-up-right">
                                 <div className={`${shaded ? 'text-white' : 'text-black'} paragraph`}>
@@ -59,19 +59,19 @@ const Partners = () => {
                             </div>
                             <div className='provides-col'>
                                 <div data-aos="fade-up-right" className='provides-col-container'>
-                                    <span className={`provide-circles ${shaded ? 'bg-white' : 'bg-[#880DB4]'}`}>
+                                    <span className={`provide-circles ${shaded ? 'bg-white' : 'bg-[#0b3f78]'}`}>
                                         <FaCheck className={`${shaded ? 'text-[#1a0b1a]' : 'text-white'}`} />
                                     </span>
                                     <span className={`provide-text ${shaded ? "text-white" : "text-black"}`}>Gauaranteed Customer Success</span>
                                 </div>
                                 <div data-aos="fade-up-right" className='provides-col-container'>
-                                    <span className={`provide-circles ${shaded ? 'bg-white' : 'bg-[#880DB4]'}`}>
+                                    <span className={`provide-circles ${shaded ? 'bg-white' : 'bg-[#0b3f78]'}`}>
                                         <FaCheck className={`${shaded ? 'text-[#1a0b1a]' : 'text-white'}`} />
                                     </span>
                                     <span className={`provide-text ${shaded ? "text-white" : "text-black"}`}>Regular Service Improvement</span>
                                 </div>
                                 <div data-aos="fade-up-right" className='provides-col-container'>
-                                    <span className={`provide-circles ${shaded ? 'bg-white' : 'bg-[#880DB4]'}`}>
+                                    <span className={`provide-circles ${shaded ? 'bg-white' : 'bg-[#0b3f78]'}`}>
                                         <FaCheck className={`${shaded ? 'text-[#1a0b1a]' : 'text-white'}`} />
                                     </span>
                                     <span className={`provide-text ${shaded ? "text-white" : "text-black"}`}>On-Demand Service</span>
@@ -94,7 +94,7 @@ const Partners = () => {
             <Container>
                 <div className="partners-bottom-container">
                     <div data-aos="fade-up-right" className='w-full'>
-                        <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#880DB4]'} title`}>Who We Serve</div>
+                        <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#0b3f78]'} title`}>Who We Serve</div>
                     </div>
                     <div data-aos="fade-up-right" className='w-full'>
                         <div className={`${shaded ? "text-white" : "text-black"} paragraph`}>We empower businesses to achieve comprehensive value through technology at every stage of their growth.</div>

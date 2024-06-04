@@ -1,6 +1,6 @@
 .animation {
     animation: gradient 5s ease infinite;
-    background: linear-gradient(135deg, #ffc700, #ff6e00, #f4009b, #8563af);
+    background: linear-gradient(135deg, #FFA12B, #0b3f78, #ff0303, #000000);
     background-size: 400% 400%;
 }
 
@@ -124,5 +124,17 @@
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes boxesfading {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
     }
 }

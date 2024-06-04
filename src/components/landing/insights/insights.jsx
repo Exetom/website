@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import image from "./../../../assets/logo-dark-tranparent.png";
+import image from "@assets/logo-dark-tranparent.png";
 import CountUp from 'react-countup';
+import BannerText from '../../bannerText/bannerText';
 
 const Insights = () => {
     const [hovered, setHovered] = useState([false, false, false, false]);
@@ -13,14 +14,7 @@ const Insights = () => {
 
     return (
         <div className='w-full'>
-            <div className='general-section-title'>
-                <span className='general-section-title-text tracking-wider'>
-                    <span className='general-section-title-border'>
-                        Our <span className='border-bar'></span>
-                    </span>
-                    Insights
-                </span>
-            </div>
+            <BannerText title="Our" subTitle="Insights" />
 
             <div className="insights-cards">
                 <div data-aos="fade-up-right" data-aos-duration="1000" className="insights-card-inner insights-c-1 text-white" onMouseEnter={() => updateTeamHoverState(0, true)} onMouseLeave={() => updateTeamHoverState(0, false)}>
