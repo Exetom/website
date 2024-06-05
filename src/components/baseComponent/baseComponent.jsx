@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, useNavigate } from "react-router-dom";
-import LOGO from "@assets/logo-dark-tranparent.png";
-import LOGOLIGHT from "@assets/logo-light-tranparent.png";
+import LOGO from "@assets/websiteLogo.png";
 import PHONE_SVG from "@assets/phone.svg";
 import PHONE_SVG_WHITE from "@assets/phone-white.svg";
 import Container from '../container/container';
@@ -33,6 +32,12 @@ const BaseComponent = () => {
             setActive(false);
         }
     }
+    const navigateToServices = () => {
+        navigate("/services");
+        if (active) {
+            setActive(false);
+        }
+    }
     const activeHandler = () => {
         setActive(!active);
     }
@@ -47,11 +52,7 @@ const BaseComponent = () => {
             <Container>
                 <nav className="base-navbar">
                     <div className="base-inner-container">
-                        {active ? (
-                            <img src={LOGOLIGHT} alt="logo-image" className="nav-logo" onClick={navigateToRoot} />
-                        ) : (
-                            <img src={LOGO} alt="logo-image" className="nav-logo" onClick={navigateToRoot} />
-                        )}
+                        <img src={LOGO} alt="logo-image" className="nav-logo" onClick={navigateToRoot} />
                         <div className="nav-right-items">
                             <div className="lets-connect">
                                 <img src={PHONE_SVG} alt="phone-svg" className="w-12" />
@@ -86,7 +87,7 @@ const BaseComponent = () => {
                             <span className="nav-menu-item left-anim" onClick={() => scrollToNextSection('partners')}><span>Who</span> we are?</span>
                         </li>
                         <li data-aos="fade-left" data-aos-duration="1600" className="nav-menu-item">
-                            <span className="nav-menu-item right-anim" onClick={() => scrollToNextSection('our-service-section')}><span>Our</span> Services</span>
+                            <span className="nav-menu-item right-anim" onClick={navigateToServices}><span>Our</span> Services</span>
                         </li>
                         <li data-aos="fade-right" data-aos-duration="1700" className="nav-menu-item">
                             <span className="nav-menu-item left-anim" onClick={() => scrollToNextSection('what-we-do')}><span>What</span> we do?</span>

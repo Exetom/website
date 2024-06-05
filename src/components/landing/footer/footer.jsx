@@ -4,7 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaDribbble } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-import LOGO from "@assets/logo-light-tranparent.png"
+import LOGO from "@assets/footer-logo.png"
 import Container from '../../container/container';
 
 const Footer = () => {
@@ -21,7 +21,7 @@ const Footer = () => {
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                         <div>
                             <div className="flex justify-center sm:justify-start">
-                                <img src={LOGO} alt="" />
+                                <img src={LOGO} alt="" className='w-60' />
                             </div>
 
                             <p className="mt-6 max-w-md text-center leading-relaxed text-[#eeeeee] sm:max-w-xs sm:text-left">

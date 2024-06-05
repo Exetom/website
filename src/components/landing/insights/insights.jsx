@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import image from "@assets/logo-dark-tranparent.png";
+import image from "@assets/websiteLogo.png";
 import CountUp from 'react-countup';
 import BannerText from '../../bannerText/bannerText';
 

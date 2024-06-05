@@ -11,6 +11,19 @@
     margin: 200px 0;
 }
 
+.text-logo-color-same {
+    background: linear-gradient(149deg, #00a5de, #e1e1e1, #e50d0e);
+    background-clip: text;
+    color: transparent;
+}
+
+.line-clamp-2 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2; /* for non-webkit browsers */
+  }
 
 // Extra clasess
 

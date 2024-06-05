@@ -10,7 +10,7 @@
             min-height: 5rem;
 
             .nav-logo {
-                width: 9rem;
+                width: 8.5rem;
                 cursor: pointer;
                 z-index: 1665046498;
             }
@@ -110,7 +110,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background: #2a0c34;
+        background: #0b1927;
         width: 100%;
         min-height: 100vh;
         z-index: 1665046497;
@@ -137,7 +137,7 @@
                     cursor: pointer;
 
                     span {
-                        color: #880DB4;
+                        color: #336396;
                     }
 
                     &.left-anim::after {
@@ -188,7 +188,9 @@
 
             .base-inner-container {
 
-                .nav-logo {}
+                .nav-logo {
+                    width: 8rem;
+                }
 
                 .nav-right-items {
 
@@ -225,7 +227,9 @@
 
             .base-inner-container {
 
-                .nav-logo {}
+                .nav-logo {
+                    width: 7rem;
+                }
 
                 .nav-right-items {
 
@@ -250,7 +254,7 @@
         .base-navbar {
             .base-inner-container {
                 .nav-logo {
-                    width: 7rem;
+                    width: 6rem;
                 }
 
                 .nav-right-items {

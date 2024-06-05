@@ -138,3 +138,9 @@
         opacity: 0;
     }
 }
+
+@keyframes textRotating {
+    100% {
+        background-position: 2000px 0;
+    }
+}

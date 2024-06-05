@@ -3,6 +3,7 @@ const Hero = lazy(() => import('../../components/landing/hero/hero'));
 const Partners = lazy(() => import('../../components/landing/partners/partners'));
 const OurProjects = lazy(() => import("../../components/landing/projects/projects"));
 const Insights = lazy(() => import("../../components/landing/insights/insights"));
+const Testimonial = lazy(() => import("../../components/landing/testimonial/testimonial"));
 const Reviews = lazy(() => import("../../components/landing/reviews/reviews"));
 const Services = lazy(() => import("../../components/landing/services/services"));
 const Work = lazy(() => import("../../components/landing/work/work"));
@@ -33,11 +34,11 @@ const Landing = () => {
                 </Suspense>
             </Section>
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <OurProjects />
                 </Suspense>
-            </Section>
+            </Section> */}
 
             <Section>
                 <Suspense fallback={<></>}>
@@ -53,15 +54,21 @@ const Landing = () => {
 
             <Section>
                 <Suspense fallback={<></>}>
+                    <Testimonial />
+                </Suspense>
+            </Section>
+
+            <Section>
+                <Suspense fallback={<></>}>
                     <Services />
                 </Suspense>
             </Section>
 
-            {/* <Section>
+            <Section>
                 <Suspense fallback={<></>}>
                     <Work />
                 </Suspense>
-            </Section> */}
+            </Section>
 
             <Section>
                 <Suspense fallback={<></>}>
