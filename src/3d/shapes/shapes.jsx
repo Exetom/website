@@ -9,6 +9,7 @@ import AUDIO_2 from "@assets/sounds/hit3.ogg";
 import AUDIO_3 from "@assets/sounds/hit4.ogg";
 
 export function Shapes() {
+  const windowHeight = window.innerHeight;
   return (
     <Canvas
       className="z-0"
@@ -16,7 +17,7 @@ export function Shapes() {
       gl={{ antialias: false }}
       dpr={[1, 1.5]}
       camera={{ position: [0, 0, 25], fov: 30, near: 1, far: 40 }}
-      style={{ width: "100%", height: '300px' }}
+      style={{ width: "100%", height: windowHeight < 780 ? (windowHeight < 700 ? '150px' : '200px') : windowHeight > 1000 ? "300px" : "250px" }}
     >
       <Suspense fallback={null}>
         <Geometries />

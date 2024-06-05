@@ -88,28 +88,6 @@ const Loader = () => {
 
     return (
         <div ref={mainScreenScope} className='loader-container'>
-            <div className="bg-animation-container">
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-                <div className="animate-boxes"></div>
-            </div>
             <div className="header-revealer"></div>
             <div ref={loadingScreen} className="loading-screen">
                 <div className="loader" ref={loaderRef}>

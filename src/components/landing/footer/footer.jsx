@@ -1,9 +1,5 @@
 import React from 'react'
-import { FaFacebookF } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaDribbble } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaDribbble, FaLinkedinIn, FaTwitter, FaBehance } from "react-icons/fa";
 import LOGO from "@assets/footer-logo.png"
 import Container from '../../container/container';
 
@@ -178,6 +174,9 @@ const Footer = () => {
                             </a>
                             <a href="https://dribbble.com/exetom" className='social-icon dri'>
                                 <FaDribbble />
+                            </a>
+                            <a href="https://www.behance.net/exetom" className='social-icon beh'>
+                                <FaBehance />
                             </a>
                             <a href="https://www.linkedin.com/company/exetom" className='social-icon lin'>
                                 <FaLinkedinIn />
