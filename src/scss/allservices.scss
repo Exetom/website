@@ -1,0 +1,25 @@
+.all-servcies-card {
+    position: relative;
+    transition: color .3s ease-in-out;
+
+    &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 0%;
+        background: rgba(0, 165, 222, 1);
+        z-index: -1;
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+        transition: .3s ease-out;
+    }
+
+    &:hover {
+        color: white;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+}

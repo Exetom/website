@@ -17,7 +17,6 @@ const Services = () => {
                     {dataServiceList.map((item, idx) => (
                         <div key={idx} data-aos={item.animation} data-aos-duration={item.animationDuration} className="service-card cursor-pointer">
                             <div className="shadow"></div>
-                            {/* #1a395b */}
                             <div className="flex gap-4 justify-center items-center sm:items-start flex-col shadow-lg p-10 rounded-md bg-[#0b1927] h-full">
                                 <span className="text-blue-600 bg-violet-500/10 p-3 rounded-full">{item.icon}</span>
                                 <div>
@@ -29,7 +28,7 @@ const Services = () => {
                     ))}
                 </div>
                 <div className='flex justify-center items-center mt-10'>
-                    <button className='bg-[#0b1927] text-white font-bold py-3 px-6 rounded translate-y-0 transition-transform duration-500 ease-in-out hover:-translate-y-3' onClick={navigateToServicesPage}>More Services</button>
+                    <button className='bg-[#0b1927] text-white font-bold py-3 px-6 rounded translate-y-0 transition-transform duration-500 ease-in-out hover:-translate-y-3' onClick={navigateToServicesPage}>See Details</button>
                 </div>
             </Container>
         </div>

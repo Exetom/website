@@ -34,11 +34,11 @@ const Landing = () => {
                 </Suspense>
             </Section>
 
-            {/* <Section>
+            <Section>
                 <Suspense fallback={<></>}>
                     <OurProjects />
                 </Suspense>
-            </Section> */}
+            </Section>
 
             <Section>
                 <Suspense fallback={<></>}>
