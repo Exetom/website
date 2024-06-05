@@ -438,6 +438,52 @@
     }
 }
 
+@media only screen and (max-width: 460px) {
+    .hero-container {
+
+        .floating-obj-1 {
+            top: -60px;
+            left: -60px;
+        }
+
+        .floating-obj-2 {}
+
+        .floating-obj-3 {}
+
+        .floating-obj-4 {}
+
+        .hero-content-container {
+
+            .title {}
+
+            .pre-title {
+                margin-bottom: 0rem;
+                font-size: 0.75rem;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            .description {
+                margin-top: 0.8rem;
+                width: 450px;
+                font-size: 0.78rem;
+            }
+
+            .booking-button {
+
+
+                span {
+                    font-size: 24px;
+                    padding: 10px 20px;
+
+                }
+            }
+        }
+
+
+    }
+}
+
 @media only screen and (max-width: 443px) {
     .hero-container {
 
@@ -482,7 +528,7 @@
     }
 }
 
-@media only screen and (max-width: 397px) {
+@media only screen and (max-width: 400px) {
     .hero-container {
 
         .floating-obj-1 {
@@ -497,7 +543,9 @@
         .floating-obj-4 {}
 
         .hero-content-container {
-            .title {}
+            .title {
+                font-size: 1.5rem;
+            }
 
             .pre-title {
                 margin-bottom: 0rem;
