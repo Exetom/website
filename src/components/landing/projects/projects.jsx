@@ -5,7 +5,7 @@ import BannerText from "../../bannerText/bannerText";
 const OurProjects = () => {
     return (
         <div className='w-full'>
-            <BannerText title="Our" subTitle="Projects" />
+            <BannerText title="Our" subTitle="Designs" />
 
             <div className='projects-container-view'>
                 <Projects />

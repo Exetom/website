@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import LOGO from "@assets/websiteLogo.png";
 import PHONE_SVG from "@assets/phone.svg";
 import PHONE_SVG_WHITE from "@assets/phone-white.svg";
@@ -7,6 +7,7 @@ import Container from '../container/container';
 
 const BaseComponent = () => {
     const navigate = useNavigate();
+    const location = useLocation();
     const [active, setActive] = useState(false);
 
     useEffect(() => {
@@ -43,9 +44,13 @@ const BaseComponent = () => {
     }
 
     const scrollToNextSection = (id) => {
-        setActive(false);
-        const element = document.getElementById(id);
-        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (location.pathname === '/') {
+            setActive(false);
+            const element = document.getElementById(id);
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            setActive(false);
+        }
     }
     return (
         <div className={`w-full base-container overflow-x-hidden ${active ? 'overflow-hidden' : ''}`}>
