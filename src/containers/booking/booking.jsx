@@ -1,9 +1,8 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import Container from '../../components/container/container';
 import { TbWorld } from "react-icons/tb";
 import { FaHandPointRight } from "react-icons/fa";
-const Laptop = lazy(() => import('../../3d/laptop/laptop'));
-const CalendlyHtml = lazy(() => import('../../3d/laptop/utils').then(module => ({ default: module.CalendlyHtml })));
+import { InlineWidget } from "react-calendly";
 
 const Booking = () => {
   return (
@@ -19,21 +18,44 @@ const Booking = () => {
             </span>
           </div>
         </div>
-        <div className='relative w-full hidden md:block  h-[40vh] sm:h-[60vh] md:h-[80vh] lg:h-[100vh] xl:h-[120vh]'>
-          <Suspense fallback={<></>}>
-            <Laptop />
-          </Suspense>
-        </div>
-        <div className='relative w-full flex md:hidden justify-center'>
-          <div className="iphone my-6">
-            <div className="screen">
-              <Suspense fallback={<></>}>
-                <CalendlyHtml />
-              </Suspense>
+        <div className='relative w-full hidden lg:flex justify-center py-10'>
+          <div class="marvel-device macbook">
+            <div class="top-bar"></div>
+            <div class="camera"></div>
+            <div class="screen">
+              <CalendlyHtml />
             </div>
-            <div className="notch">
-              <div className="camera"></div>
-              <div className="speaker"></div>
+            <div class="bottom-bar"></div>
+          </div>
+        </div>
+        <div className='relative w-full hidden sm:flex lg:hidden justify-center py-10'>
+          <div class="marvel-device ipad silver">
+            <div class="camera"></div>
+            <div class="screen">
+              <CalendlyHtml />
+            </div>
+            <div class="home"></div>
+          </div>
+        </div>
+        <div className='relative w-full flex sm:hidden justify-center py-10'>
+          <div class="marvel-device iphone-x">
+            <div class="notch">
+              <div class="camera"></div>
+              <div class="speaker"></div>
+            </div>
+            <div class="top-bar"></div>
+            <div class="sleep"></div>
+            <div class="bottom-bar"></div>
+            <div class="volume"></div>
+            <div class="overflow">
+              <div class="shadow shadow--tr"></div>
+              <div class="shadow shadow--tl"></div>
+              <div class="shadow shadow--br"></div>
+              <div class="shadow shadow--bl"></div>
+            </div>
+            <div class="inner-shadow"></div>
+            <div class="screen">
+              <CalendlyHtml />
             </div>
           </div>
         </div>
@@ -43,3 +65,10 @@ const Booking = () => {
 }
 
 export default Booking;
+
+
+const CalendlyHtml = () => {
+  return (
+    <InlineWidget url="https://calendly.com/exetom2024/consultation-call" styles={{ height: '100%' }} />
+  );
+}
