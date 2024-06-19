@@ -166,7 +166,7 @@ const Footer = () => {
                     <div className="footer-bottom-container">
                         <div className='footer-bottom-title'>@2024 Exetom. All Rights Reserved</div>
                         <div className="socials">
-                            <a href="https://www.facebook.com/profile.php?id=61560092667594" className='social-icon fb'>
+                            <a href="https://www.facebook.com/profile.php?id=61560426016099" className='social-icon fb'>
                                 <FaFacebookF />
                             </a>
                             <a href="https://www.instagram.com/exetom_inc/" className='social-icon ins'>
@@ -180,9 +180,6 @@ const Footer = () => {
                             </a>
                             <a href="https://www.linkedin.com/company/exetom" className='social-icon lin'>
                                 <FaLinkedinIn />
-                            </a>
-                            <a href="https://www.linkedin.com/company/exetom" className='social-icon twi'>
-                                <FaTwitter />
                             </a>
                         </div>
                     </div>
