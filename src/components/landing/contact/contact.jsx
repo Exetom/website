@@ -77,7 +77,7 @@ const Contact = () => {
                                     <div className="ml-4 mb-4">
                                         <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">Contact
                                         </h3>
-                                        <p className="text-gray-600 flex items-center gap-2">Mobile: + (966) 57 431-6855 <FaWhatsapp color='#25D366' size={20} /></p>
+                                        <p className="text-gray-600 flex items-center gap-2">Mobile: + (447) 84 215-3349 <FaWhatsapp color='#25D366' size={20} /></p>
                                         <p className="text-gray-600">Mail: info@exetom.com</p>
                                     </div>
                                 </li>

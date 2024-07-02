@@ -124,7 +124,7 @@ const Footer = () => {
                                                 />
                                             </svg>
 
-                                            <span className="flex-1 text-[#eeeeee]">+ (966) 57 431 6855</span>
+                                            <span className="flex-1 text-[#eeeeee]">+ (447) 84 215-3349</span>
                                         </span>
                                     </li>
 

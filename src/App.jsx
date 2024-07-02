@@ -4,6 +4,8 @@ import Navigation from "./navigation/navigation";
 import Loader from './components/loader/loader';
 
 function App() {
+
+
   return (
     <>
       <Loader />
