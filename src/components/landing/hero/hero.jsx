@@ -29,7 +29,7 @@ const Hero = () => {
 
                 <div className='hero-content-container'>
                     <div data-aos="fade-right" data-aos-duration="1000" className='pre-title'>Revolutionizing the future with cutting-edge software solutions today</div>
-                    <div data-aos="fade-down-right" data-aos-duration="1000" className='title'>Provide <span className='font-extrabold text-[#28527e]'>Million-Dollar</span> Business Solutions <img src={ROCKET} alt="" /></div>
+                    <div data-aos="fade-down-right" data-aos-duration="1000" className='title'>Provide <span className='font-extrabold bg-gradient-to-r from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] text-transparent bg-clip-text'>Million-Dollar</span> Business Solutions <img src={ROCKET} alt="" /></div>
                     <div data-aos="fade-left" data-aos-duration="1000" className='description'>
                         Access 15+ passionate software engineers who collaborate with everyone from individuals and startups to SMEs and large enterprises. We're all about crafting innovative, simple, and artistically designed software solutions.
                     </div>

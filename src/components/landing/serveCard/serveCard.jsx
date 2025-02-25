@@ -3,6 +3,14 @@ import { data } from "./data";
 import Container from '../../container/container'
 
 const ServeCard = () => {
+    const colors = [
+        { bg: '#ffc8bd', text: '#ff7759' },
+        { bg: '#a4e6ff', text: '#0cbfff' },
+        { bg: '#daadda', text: '#a52fa4' },
+        { bg: '#b7bbc9', text: '#112149' },
+        { bg: '#ffc8bd', text: '#ff7759' },
+        { bg: '#a4e6ff', text: '#0cbfff' }
+    ];
     return (
         <div className="w-full" id="what-we-do">
             <Container>
@@ -16,11 +24,13 @@ const ServeCard = () => {
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 flex-wrap">
                     {(data || []).map((item, idx) => (
-                        <div key={idx} data-aos={item.animation} data-aos-duration={item.animationDuration} className="flex gap-4 justify-center items-start sm:items-center flex-col shadow-lg p-10 rounded">
-                            <span className="text-[#0b3f78] bg-[#0b3f78]/10 p-3 rounded-full">{item.icon}</span>
-                            <div>
-                                <h3 className="font-semibold text-xl text-left sm:text-center">{item.title}</h3>
-                                <p className="mt-1 text-gray-500 text-left sm:text-center"> {item.description}</p>
+                        <div className='roz-card'>
+                            <div key={idx} className="flex gap-4 justify-start items-start flex-col m-10">
+                                <span style={{ backgroundColor: colors[idx].bg }} className="p-3 rounded-full icon-box">{item.icon(20, colors[idx].text)}</span>
+                                <div>
+                                    <h3 className="font-semibold text-xl text-left mb-2 inner-title">{item.title}</h3>
+                                    <p className="mt-1 text-[#b5c1cc] text-left inner-description"> {item.description}</p>
+                                </div>
                             </div>
                         </div>
                     ))}

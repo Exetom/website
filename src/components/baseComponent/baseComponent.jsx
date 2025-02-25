@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import LOGO from "@assets/websiteLogo.png";
+import LOGO from "@assets/logo-main.png";
 import PHONE_SVG from "@assets/phone.svg";
 import PHONE_SVG_WHITE from "@assets/phone-white.svg";
 import Container from '../container/container';
+import LANDING_SIDES from "@assets/landing_image-background-2.webp";
 
 const BaseComponent = () => {
     const navigate = useNavigate();
@@ -54,6 +55,8 @@ const BaseComponent = () => {
     }
     return (
         <div className={`w-full base-container overflow-x-hidden ${active ? 'overflow-hidden' : ''}`}>
+            <img src={LANDING_SIDES} alt="LANDING_SIDES_1" className='langind-side-1' />
+            <img src={LANDING_SIDES} alt="LANDING_SIDES_2" className='langind-side-2' />
             <Container>
                 <nav className="base-navbar">
                     <div className="base-inner-container">
@@ -63,7 +66,7 @@ const BaseComponent = () => {
                                 <img src={PHONE_SVG} alt="phone-svg" className="w-12" />
                                 <div className="flex flex-col">
                                     <span className="text-sm font-bold">Let's connect</span>
-                                    <span className="text-[#3B054E] font-semibold">+ (447) 84 215-3349</span>
+                                    <span className="text-[#A32FA3] font-semibold">+ (447) 84 215-3349</span>
                                 </div>
                             </div>
                             <button className="nav-book-button animation xl:text-base text-sm whitespace-nowrap font-bold text-white py-3 px-6 rounded-full" onClick={navigateToBooking}>Book a meeting</button>
@@ -108,7 +111,7 @@ const BaseComponent = () => {
                                 <img src={PHONE_SVG_WHITE} alt="phone-svg" className="w-10 fill-slate-50" />
                                 <div className="flex flex-col justify-center">
                                     <span className="text-sm font-bold text-[#eee]">Let's connect</span>
-                                    <span className="text-[#ffffff] font-semibold">+ (447) 84 215-3349</span>
+                                    <span className="text-[#2b2b2b] font-semibold">+ (447) 84 215-3349</span>
                                 </div>
                             </div>
                         </li>

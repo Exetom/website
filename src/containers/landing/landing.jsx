@@ -24,7 +24,7 @@ const Landing = () => {
                 <Hero />
             </Suspense>
 
-            <Suspense fallback={<></>}>
+            {/* <Suspense fallback={<></>}>
                 <Partners />
             </Suspense>
 
@@ -32,13 +32,13 @@ const Landing = () => {
                 <Suspense fallback={<></>}>
                     <ServeCard />
                 </Suspense>
-            </Section>
+            </Section> */}
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <OurProjects />
                 </Suspense>
-            </Section>
+            </Section> */}
 
             <Section>
                 <Suspense fallback={<></>}>
@@ -46,7 +46,7 @@ const Landing = () => {
                 </Suspense>
             </Section>
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Reviews />
                 </Suspense>
@@ -84,7 +84,7 @@ const Landing = () => {
 
             <Suspense fallback={<></>}>
                 <Footer />
-            </Suspense>
+            </Suspense> */}
         </div>
     )
 }

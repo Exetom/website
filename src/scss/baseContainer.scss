@@ -1,4 +1,18 @@
 .base-container {
+    position: relative;
+
+    .langind-side-1 {
+        position: absolute;
+        top: 150px;
+    }
+
+    .langind-side-2 {
+        position: absolute;
+        right: 0;
+        transform: rotate(180deg);
+        top: calc(100vh - 415px);
+    }
+
     .base-navbar {
         min-height: 7rem;
         padding-top: 1.25rem;
@@ -10,7 +24,7 @@
             min-height: 5rem;
 
             .nav-logo {
-                width: 8.5rem;
+                width: 16rem;
                 cursor: pointer;
                 z-index: 1665046498;
             }
@@ -110,7 +124,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        background: #0b1927;
+        background: linear-gradient(to right, #00BDFF, #5276D1, #7A53BA, #A32FA3);
         width: 100%;
         min-height: 100vh;
         z-index: 1665046497;
@@ -137,7 +151,7 @@
                     cursor: pointer;
 
                     span {
-                        color: #336396;
+                        color: #2b2b2b;
                     }
 
                     &.left-anim::after {
@@ -182,6 +196,16 @@
     }
 }
 
+@media only screen and (max-width: 1460px) {
+    .base-container {
+
+        .langind-side-1,
+        .langind-side-2 {
+            display: none;
+        }
+    }
+}
+
 @media only screen and (max-width: 767px) {
     .base-container {
         .base-navbar {
@@ -189,7 +213,7 @@
             .base-inner-container {
 
                 .nav-logo {
-                    width: 8rem;
+                    width: 14rem;
                 }
 
                 .nav-right-items {
@@ -228,7 +252,7 @@
             .base-inner-container {
 
                 .nav-logo {
-                    width: 7rem;
+                    width: 12rem;
                 }
 
                 .nav-right-items {
@@ -254,7 +278,7 @@
         .base-navbar {
             .base-inner-container {
                 .nav-logo {
-                    width: 6rem;
+                    width: 10rem;
                 }
 
                 .nav-right-items {

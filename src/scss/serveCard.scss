@@ -1,0 +1,28 @@
+#what-we-do {
+
+    .roz-card {
+        cursor: pointer;
+        transition: all 400ms cubic-bezier(0.42, 0, 0.41, 1.31);
+        border-radius: 20px;
+        border: 1px solid #afb8c1;
+
+        &:hover {
+            background: linear-gradient(to right, #00BDFF, #5276D1, #7A53BA, #A32FA3);
+            transform: scale3d(1.05, 1.05, 1.05);
+            box-shadow: 0px 3px 30px #12204999;
+
+            .icon-box {
+                filter: invert(1);
+            }
+
+            .inner-title {
+                color: #2e2e2e;
+            }
+
+            .inner-description {
+                color: white;
+            }
+
+        }
+    }
+}

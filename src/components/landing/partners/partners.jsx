@@ -34,7 +34,7 @@ const Partners = () => {
     }
 
     return (
-        <div className={`${shaded ? 'bg-[#0b1927] ' : ''}w-full min-h-screen background-animation pt-[7.5rem]`} id='partners'>
+        <div className={`${shaded ? 'gradient-blur-background ' : ''}w-full min-h-screen background-animation pt-[7.5rem]`} id='partners'>
             <Container>
                 <div className="partners-upper-container">
                     <div className="gird-container-main">

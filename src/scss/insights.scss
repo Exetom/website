@@ -16,69 +16,72 @@
         border-radius: 1.5rem;
         padding: 3.5rem;
         margin-bottom: 20px;
-        background: linear-gradient(145deg, #00a3dd, #c62029, #ecf5f8, #b9def9, #04a2db);
+        background: linear-gradient(145deg, #00BDFF, #5276D1, #ecf5f8, #7A53BA, #A32FA3);
         // background: linear-gradient(145deg, #ffe680, #ffd700, #e6ac00, #ffd700, #ffe680);
         background-size: 200% 200%;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.3);
         animation: metallic-sheen 5s infinite;
+        display: flex;
+
 
         .insights-card-front {
             height: 100%;
             width: 100%;
             display: flex;
-            justify-content: flex-end;
-            align-items: flex-end;
+            flex-direction: column-reverse;
+            justify-content: space-between;
+            align-items: flex-start;
             animation: display 2s ease-in-out;
 
             img {
-                width: 150px;
-            }
-        }
-
-        .insights-card-back {
-            height: 100%;
-            display: none;
-            flex-direction: column;
-            justify-content: space-between;
-            animation: display 2s ease-in-out;
-
-            .insights-card-text {
-                font-weight: bolder;
-                font-size: 96px;
-                display: flex;
-                justify-content: flex-start;
-                transition: justify-content 2s;
+                width: 12rem;
             }
 
             .insights-card-content {
                 font-weight: bolder;
                 font-size: 32px;
                 display: flex;
+                transition: justify-content 2s;
+            }
+        }
+
+        .insights-card-back {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            animation: display 2s ease-in-out;
+
+            .insights-card-text {
+                font-weight: bolder;
+                font-size: 96px;
+                display: flex;
+                align-items: flex-end;
                 justify-content: flex-end;
                 transition: justify-content 2s;
             }
         }
 
         &:hover {
-            .insights-card-front {
-                display: none;
-            }
+            // .insights-card-front {
+            //     display: none;
+            // }
 
-            .insights-card-back {
-                display: flex;
-            }
+            // .insights-card-back {
+            //     display: flex;
+            // }
         }
     }
 
     .insights-c-1:hover {
-        background: #c93204 !important;
+        background: #00BDFF !important;
     }
 
     .insights-c-2 {
         margin-top: 150px;
 
         &:hover {
-            background: #cdd6d6 !important;
+            background: #5276D1 !important;
         }
     }
 
@@ -86,12 +89,12 @@
         margin-top: -150px;
 
         &:hover {
-            background: #a1c9b9 !important;
+            background: #7A53BA !important;
         }
     }
 
     .insights-c-4:hover {
-        background: #c2b439 !important;
+        background: #A32FA3 !important;
     }
 }
 
@@ -107,13 +110,13 @@
                 img {
                     width: 140px;
                 }
+
+                .insights-card-content {}
             }
 
             .insights-card-back {
 
                 .insights-card-text {}
-
-                .insights-card-content {}
             }
         }
     }
@@ -129,13 +132,13 @@
 
             .insights-card-front {
                 img {}
+
+                .insights-card-content {}
             }
 
             .insights-card-back {
 
                 .insights-card-text {}
-
-                .insights-card-content {}
             }
         }
     }
@@ -151,13 +154,13 @@
 
             .insights-card-front {
                 img {}
+
+                .insights-card-content {}
             }
 
             .insights-card-back {
 
                 .insights-card-text {}
-
-                .insights-card-content {}
             }
 
         }
@@ -184,13 +187,13 @@
                 img {
                     width: 130px;
                 }
+
+                .insights-card-content {}
             }
 
             .insights-card-back {
 
                 .insights-card-text {}
-
-                .insights-card-content {}
             }
 
         }
@@ -215,16 +218,16 @@
 
             .insights-card-front {
                 img {}
+
+                .insights-card-content {
+                    font-size: 30px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 72px;
-                }
-
-                .insights-card-content {
-                    font-size: 30px;
                 }
             }
         }
@@ -251,17 +254,17 @@
                 img {
                     width: 100px;
                 }
+
+                .insights-card-content {
+
+                    font-size: 26px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 60px;
-                }
-
-                .insights-card-content {
-
-                    font-size: 26px;
                 }
             }
         }
@@ -288,16 +291,16 @@
                 img {
                     width: 90px;
                 }
+
+                .insights-card-content {
+                    font-size: 24px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 47px;
-                }
-
-                .insights-card-content {
-                    font-size: 24px;
                 }
             }
         }
@@ -327,16 +330,16 @@
                 img {
                     width: 130px;
                 }
+
+                .insights-card-content {
+                    font-size: 32px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 72px;
-                }
-
-                .insights-card-content {
-                    font-size: 32px;
                 }
             }
         }
@@ -368,13 +371,13 @@
 
             .insights-card-front {
                 img {}
+
+                .insights-card-content {}
             }
 
             .insights-card-back {
 
                 .insights-card-text {}
-
-                .insights-card-content {}
             }
         }
 
@@ -405,16 +408,16 @@
                 img {
                     width: 110px;
                 }
+
+                .insights-card-content {
+                    font-size: 28px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 60px;
-                }
-
-                .insights-card-content {
-                    font-size: 28px;
                 }
             }
         }
@@ -448,16 +451,16 @@
                 img {
                     width: 100px;
                 }
+
+                .insights-card-content {
+                    font-size: 18px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 46px;
-                }
-
-                .insights-card-content {
-                    font-size: 18px;
                 }
             }
         }
@@ -491,6 +494,8 @@
                 img {
                     width: 90px;
                 }
+
+                .insights-card-content {}
             }
 
             .insights-card-back {
@@ -498,8 +503,6 @@
                 .insights-card-text {
                     font-size: 38px;
                 }
-
-                .insights-card-content {}
             }
         }
 
@@ -531,16 +534,16 @@
                 img {
                     width: 80px;
                 }
+
+                .insights-card-content {
+                    font-size: 14px;
+                }
             }
 
             .insights-card-back {
 
                 .insights-card-text {
                     font-size: 34px;
-                }
-
-                .insights-card-content {
-                    font-size: 14px;
                 }
             }
         }

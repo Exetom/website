@@ -1,4 +1,21 @@
+.gradient-blur-background {
+    background: linear-gradient(to right, #00BDFF, #5276D1, #7A53BA, #A32FA3);
+    position: relative;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        backdrop-filter: blur(10px);
+        z-index: -1;
+    }
+}
+
 #partners {
+
     .partners-upper-container {
         height: 100%;
         display: flex;
@@ -84,28 +101,28 @@
                     .marker-1 {
                         position: absolute;
                         left: 69%;
-                        bottom: 56%;
+                        bottom: 60%;
                         z-index: 1;
                     }
 
                     .marker-2 {
                         position: absolute;
                         left: 65%;
-                        bottom: 53%;
+                        bottom: 58%;
                         z-index: 1;
                     }
 
                     .marker-3 {
                         position: absolute;
                         left: 49%;
-                        bottom: 66%;
+                        bottom: 68%;
                         z-index: 1;
                     }
 
                     .marker-4 {
                         position: absolute;
                         left: 23%;
-                        bottom: 59%;
+                        bottom: 63%;
                         z-index: 1;
                     }
                 }
