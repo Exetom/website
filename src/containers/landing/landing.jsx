@@ -26,11 +26,17 @@ const Landing = () => {
 
             {/* <Suspense fallback={<></>}>
                 <Partners />
-            </Suspense>
+            </Suspense> */}
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <ServeCard />
+                </Suspense>
+            </Section> */}
+
+            {/* <Section>
+                <Suspense fallback={<></>}>
+                    <Services />
                 </Suspense>
             </Section> */}
 
@@ -40,51 +46,45 @@ const Landing = () => {
                 </Suspense>
             </Section> */}
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Insights />
                 </Suspense>
-            </Section>
+            </Section> */}
 
             {/* <Section>
                 <Suspense fallback={<></>}>
                     <Reviews />
                 </Suspense>
-            </Section>
+            </Section> */}
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Testimonial />
                 </Suspense>
-            </Section>
+            </Section> */}
 
-            <Section>
-                <Suspense fallback={<></>}>
-                    <Services />
-                </Suspense>
-            </Section>
-
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Work />
                 </Suspense>
-            </Section>
+            </Section> */}
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Skills />
                 </Suspense>
-            </Section>
+            </Section> */}
 
-            <Section>
+            {/* <Section>
                 <Suspense fallback={<></>}>
                     <Contact />
                 </Suspense>
-            </Section>
+            </Section> */}
 
             <Suspense fallback={<></>}>
                 <Footer />
-            </Suspense> */}
+            </Suspense>
         </div>
     )
 }

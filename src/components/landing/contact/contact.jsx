@@ -28,7 +28,7 @@ const Contact = () => {
                 <div className="mb-4">
                     <div className="mb-6 max-w-3xl text-center sm:text-center md:mx-auto md:mb-12">
                         <h2
-                            className="font-heading mb-4 font-bold tracking-tight text-3xl sm:text-5xl text-logo-color-same">
+                            className="font-heading mb-4 font-bold tracking-tight text-3xl sm:text-5xl bg-gradient-to-r from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] text-transparent bg-clip-text">
                             Get in Touch
                         </h2>
                         <p className="mx-auto mt-4 max-w-3xl text-xl text-gray-600">Feel free to contact us
@@ -39,13 +39,13 @@ const Contact = () => {
                     <div className="grid md:grid-cols-2">
                         <div className="h-full pr-6">
                             <p className="mt-3 mb-12 text-lg text-gray-600">
-                                Need IT assistance? Fill out the form below and our expert consultant, Exetom, will get back to you shortly!
+                                Need IT assistance? Fill out the form below and our expert consultant, Haamztech, will get back to you shortly!
                                 <br />
-                                Have a question or need support? Reach out to Exetom using the form, and we'll respond as soon as possible!
+                                Have a question or need support? Reach out to Haamztech using the form, and we'll respond as soon as possible!
                             </p>
                             <ul className="mb-6 md:mb-0">
                                 <li className="flex">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#0b1927] text-gray-50">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-gradient-to-tr from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round" className="h-6 w-6">
@@ -63,7 +63,7 @@ const Contact = () => {
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#0b1927] text-gray-50">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-gradient-to-tr from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round" className="h-6 w-6">
@@ -78,11 +78,11 @@ const Contact = () => {
                                         <h3 className="mb-2 text-lg font-medium leading-6 text-gray-900">Contact
                                         </h3>
                                         <p className="text-gray-600 flex items-center gap-2">Mobile: + (447) 84 215-3349 <FaWhatsapp color='#25D366' size={20} /></p>
-                                        <p className="text-gray-600">Mail: info@exetom.com</p>
+                                        <p className="text-gray-600">Mail: info@haazmtech.com</p>
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-[#0b1927] text-gray-50">
+                                    <div className="flex h-10 w-10 items-center justify-center rounded bg-gradient-to-tr from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] text-gray-50">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
                                             strokeLinejoin="round" className="h-6 w-6">
@@ -116,7 +116,7 @@ const Contact = () => {
                                     </div>
                                 </div>
                                 <div className="text-center">
-                                    <button type="submit" className="w-full bg-[#0b1927] text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
+                                    <button type="submit" className="w-full bg-gradient-to-r from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] font-bold text-white px-6 py-3 font-xl rounded-md sm:mb-0">Send Message</button>
                                 </div>
                             </form>
                         </div>

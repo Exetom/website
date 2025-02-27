@@ -11,7 +11,7 @@ export const data = [
         animationDuration: "500",
         icon: (size = 20, color = '#ffffff') => <MdOutlineIntegrationInstructions size={size} color={color} />,
         title: "One-Stop Solution",
-        description: "From website development to social media marketing, we offer a comprehensive suite of services to address all your IT and digital marketing needs under oneroof. With Exetom, you can streamline your ops and focus on what matters most – growing your business."
+        description: "From website development to social media marketing, we offer a comprehensive suite of services to address all your IT and digital marketing needs under oneroof. With Haamztech, you can streamline your ops and focus on what matters most – growing your business."
     },
     {
         animation: "fade-up-left",

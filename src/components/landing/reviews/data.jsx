@@ -9,7 +9,7 @@ export const datalist = [
     {
         clinet: 'Sara Barkin',
         via: 'Upwork',
-        reivew: 'Exetom is a great product leader and developer. He helped me accelerate my development by collaborating with many engineers and helped me build my app. I look forward to working with Exetom again',
+        reivew: 'Haamztech is a great product leader and developer. He helped me accelerate my development by collaborating with many engineers and helped me build my app. I look forward to working with Haamztech again',
     },
     {
         clinet: 'Adrian Joe',
@@ -34,7 +34,7 @@ export const datalist = [
     {
         clinet: 'Isaca Stegobtoler',
         via: 'Fiver',
-        reivew: 'Another top shelf delivery from Exetom. Happy again, as expected.',
+        reivew: 'Another top shelf delivery from Haamztech. Happy again, as expected.',
     },
     {
         clinet: 'Adam Areil',

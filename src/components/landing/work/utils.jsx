@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
                     <div className="overflow-hidden rounded-[10px] shadow">
                         <img src={ImageHref} alt="portfolio" className="w-full transform hover:scale-150 cursor-pointer transition-transform duration-500 ease-in-out" />
                     </div>
-                    <div className="relative z-10 mx-7 -mt-20 rounded-lg bg-white py-[34px] px-3 text-center shadow-md">
+                    <div className="relative transform hover:scale-110 transition-transform duration-500 ease-in-out z-10 mx-7 -mt-20 cursor-pointer border border-[#d2d2d2] rounded-lg bg-white py-[34px] px-3 text-center shadow-md hover:bg-gradient-to-tr from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] hover:text-white">
                         <span className="text-primary mb-2 block text-sm font-medium">
                             {category}
                         </span>

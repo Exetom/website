@@ -40,7 +40,7 @@ const Partners = () => {
                     <div className="gird-container-main">
                         <div className='gird-column-text'>
                             <div data-aos="fade-up-right">
-                                <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#0b3f78]'} title`}>We are Exetom</div>
+                                <div className={`${shaded ? 'text-[#FFA12B]' : 'text-[#0b3f78]'} title`}>We are Haamztech</div>
                             </div>
                             <div data-aos="fade-up-right">
                                 <div className={`${shaded ? 'text-white' : 'text-black'} paragraph`}>

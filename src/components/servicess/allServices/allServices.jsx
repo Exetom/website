@@ -15,7 +15,7 @@ const AllServices = () => {
                         We Provide Services
                     </div>
                     <div className="xs:text-xl text-center lg:mx-20">
-                        Partner with Exetom. Inc today and take your business to new heights. With our comprehensive services, unwavering support, and commitment to excellence, we're here to help you succeed in the digital era.
+                        Partner with Haamztech. Inc today and take your business to new heights. With our comprehensive services, unwavering support, and commitment to excellence, we're here to help you succeed in the digital era.
                     </div>
                 </div>
                 <div className='flex flex-wrap gap-8 md:gap-4 sm:-mx-4'>

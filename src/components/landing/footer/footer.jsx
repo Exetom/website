@@ -21,7 +21,7 @@ const Footer = () => {
                             </div>
 
                             <p className="mt-6 max-w-md text-center leading-relaxed text-[#eeeeee] sm:max-w-xs sm:text-left">
-                                At Exetom, we deliver innovative IT solutions that empower businesses to achieve operational excellence and drive digital transformation. Our expertise in technology integration and customized support ensures seamless and secure IT operations tailored to your unique needs.
+                                At Haamztech, we deliver innovative IT solutions that empower businesses to achieve operational excellence and drive digital transformation. Our expertise in technology integration and customized support ensures seamless and secure IT operations tailored to your unique needs.
                             </p>
                         </div>
 
@@ -101,7 +101,7 @@ const Footer = () => {
                                                 />
                                             </svg>
 
-                                            <span className="flex-1 text-[#eeeeee]">info@exetom.com</span>
+                                            <span className="flex-1 text-[#eeeeee]">info@haamztech.com</span>
                                         </span>
                                     </li>
 
@@ -164,7 +164,7 @@ const Footer = () => {
             <Container>
                 <div className="footer-bottom">
                     <div className="footer-bottom-container">
-                        <div className='footer-bottom-title'>@2024 Exetom. All Rights Reserved</div>
+                        <div className='footer-bottom-title'>@{new Date().getFullYear()} Haamztech. All Rights Reserved</div>
                         <div className="socials">
                             <a href="https://www.facebook.com/profile.php?id=61560426016099" className='social-icon fb'>
                                 <FaFacebookF />

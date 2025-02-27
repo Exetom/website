@@ -53,7 +53,7 @@ const Testimonial = () => {
     }, []);
 
     return (
-        <section className="bg-gradient-to-br from-blue-500 to-red-500">
+        <section className="bg-gradient-to-r from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3]">
             <div className="mx-auto max-w-[1340px] px-4 py-12 sm:px-6 lg:me-0 lg:py-16 lg:pe-0 lg:ps-8 xl:py-24">
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3 lg:items-center lg:gap-16">
                     <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
@@ -69,7 +69,7 @@ const Testimonial = () => {
                             <button
                                 aria-label="Previous slide"
                                 ref={prevDesktopRef}
-                                className="rounded-full border border-[#FFA12B] p-3 text-[#FFA12B] transition hover:border-[#e50a0a] hover:bg-[#e50a0a] hover:text-white"
+                                className="rounded-full border border-[#2bdfff] p-3 text-[#2bdfff] transition hover:border-[#2bdfff] hover:bg-[#2bdfff] hover:text-white"
                             >
                                 <MdOutlineChevronLeft size={28} />
                             </button>
@@ -77,7 +77,7 @@ const Testimonial = () => {
                             <button
                                 aria-label="Next slide"
                                 ref={nextDesktopRef}
-                                className="rounded-full border border-[#FFA12B] p-3 text-[#FFA12B] transition hover:border-[#e50a0a] hover:bg-[#e50a0a] hover:text-white"
+                                className="rounded-full border border-[#2bdfff] p-3 text-[#2bdfff] transition hover:border-[#2bdfff] hover:bg-[#2bdfff] hover:text-white"
                             >
                                 <MdOutlineChevronRight size={28} />
                             </button>
@@ -89,25 +89,25 @@ const Testimonial = () => {
                             {(dataList || []).map(((item, idx) => (
                                 <div key={idx} className="keen-slider__slide">
                                     <blockquote
-                                        className="flex h-full flex-col justify-between bg-white p-6 shadow-lg sm:p-8 lg:p-12 rounded"
+                                        className="flex h-full flex-col justify-between bg-white p-6 shadow-lg sm:p-8 lg:p-12 rounded transform transition-all duration-400 ease-[cubic-bezier(0.42,_0,_0.41,_1.31)] scale-100 hover:scale-105"
                                     >
                                         <div>
                                             <div className="flex gap-0.5">
                                                 {item.rating.map((rate, indx) => (
                                                     <>
                                                         {rate === 1 ? (
-                                                            <TiStarFullOutline key={indx} size={20} className='text-green-500' />
+                                                            <TiStarFullOutline key={indx} size={20} className='text-[#00BDFF]' />
                                                         ) : rate === 0 ? (
-                                                            <TiStarOutline key={indx} size={20} className='text-green-500' />
+                                                            <TiStarOutline key={indx} size={20} className='text-[#00BDFF]' />
                                                         ) : (
-                                                            <TiStarHalfOutline key={indx} size={20} className='text-green-500' />
+                                                            <TiStarHalfOutline key={indx} size={20} className='text-[#00BDFF]' />
                                                         )}
                                                     </>
                                                 ))}
                                             </div>
 
                                             <div className="mt-4">
-                                                <p className="text-2xl font-bold text-[#e50a0a] sm:text-3xl">{item.title}</p>
+                                                <p className="text-2xl font-bold bg-gradient-to-r from-[#00BDFF] via-[#5276D1] via-[#7A53BA] to-[#A32FA3] text-transparent bg-clip-text sm:text-3xl">{item.title}</p>
 
                                                 <p className="mt-4 leading-relaxed text-gray-700">
                                                     {item.description}
@@ -143,7 +143,7 @@ const Testimonial = () => {
                     </button>
                 </div>
             </div>
-        </section>
+        </section >
     )
 }
 
